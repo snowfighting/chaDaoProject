@@ -1,0 +1,29 @@
+<div class="container">
+	<header id="detali-header">
+		
+	</header>
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<img src="../../../images/sai1.jpg"/>
+			</div>
+			<div class="swiper-slide">
+				<img src="../../../images/sai2.jpg"/>
+			</div>
+			<div class="swiper-slide">
+				<img src="../../../images/sai3.jpg"/>
+			</div>
+			<div class="swiper-slide">
+				<img src="../../../images/sai4.jpg"/>
+			</div>
+			<div class="swiper-slide">
+				<img src="../../../images/sai5.jpg"/>
+			</div>
+		</div>
+		<div class="swiper-pagination-h"></div>
+	</div>
+	<section>
+		
+	</section>
+	
+</div>

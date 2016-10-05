@@ -1,0 +1,7 @@
+<header id="header">
+	<div id="header-wrap">
+		<span id="header-left">左边</span>
+		<div id="header-title">标题</div>
+		<span id="header-right">右边</span>
+	</div>
+</header>

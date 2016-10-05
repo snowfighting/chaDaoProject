@@ -44,7 +44,7 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(10);
+	module.exports = __webpack_require__(5);
 
 
 /***/ },
@@ -69,23 +69,20 @@
 	/*** IMPORTS FROM imports-loader ***/
 	var define = false;
 
-	//var str = require('../tpls/car-details.string');
-	var footer = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../tpls/footer.string\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
-
 	var common = __webpack_require__(7);
 
-	//common.renderBody($('body'),str);
-	//common.append($('.container'),footer);
+	var header=__webpack_require__(8);
+	var body=__webpack_require__(9);
 
-
-<<<<<<< HEAD
+	common.renderBody($('body'),header);
+	common.append($('body'),body);
+	common.setHeader($('#header-title'),"注册");
+	common.setHeader($('#header-left'),"左");
+	common.setHeader($('#header-right'),"右");
 
 
 /***/ },
 /* 7 */
-=======
-/***/ 10:
->>>>>>> fengyuchao
 /***/ function(module, exports) {
 
 	/*** IMPORTS FROM imports-loader ***/
@@ -106,12 +103,27 @@
 	    $('#footer').on('tap', 'li', function () {
 	      location.href = $(this).attr('data-url');
 	    })
+	  },
+	  setHeader:function($el,str){
+	  	$el.html(str);
 	  }
 	};
 
 	module.exports = common;
 
 
+
+/***/ },
+/* 8 */
+/***/ function(module, exports) {
+
+	module.exports = "<header id=\"header\">	<div id=\"header-wrap\">		<span id=\"header-left\">左边</span>		<div id=\"header-title\">标题</div>		<span id=\"header-right\">右边</span>	</div></header>"
+
+/***/ },
+/* 9 */
+/***/ function(module, exports) {
+
+	module.exports = "<div id=\"container\">	</div>"
 
 /***/ }
 /******/ ]);
