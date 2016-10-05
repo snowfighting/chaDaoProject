@@ -45,20 +45,12 @@
 /***/ 0:
 /***/ function(module, exports, __webpack_require__) {
 
-<<<<<<< HEAD
-	module.exports = __webpack_require__(8);
-=======
-	module.exports = __webpack_require__(11);
->>>>>>> fengyuchao
+	module.exports = __webpack_require__(14);
 
 
 /***/ },
 
-<<<<<<< HEAD
-/***/ 8:
-=======
-/***/ 11:
->>>>>>> fengyuchao
+/***/ 14:
 /***/ function(module, exports) {
 
 	/*** IMPORTS FROM imports-loader ***/

@@ -13,12 +13,12 @@ var common = {
     $('#footer').on('tap', 'li', function () {
       location.href = $(this).attr('data-url');
     })
-<<<<<<< HEAD
-=======
+//<<<<<<< HEAD
+//=======
   },
   setHeader:function($el,str){
   	$el.html(str);
->>>>>>> fengyuchao
+//>>>>>>> fengyuchao
   }
 };
 
