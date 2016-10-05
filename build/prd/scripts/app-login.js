@@ -44,15 +44,44 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(10);
+	module.exports = __webpack_require__(4);
 
 
 /***/ },
 /* 1 */,
 /* 2 */,
 /* 3 */,
-/* 4 */,
-/* 5 */,
+/* 4 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/*** IMPORTS FROM imports-loader ***/
+	var define = false;
+
+	__webpack_require__(5);
+
+
+
+
+/***/ },
+/* 5 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/*** IMPORTS FROM imports-loader ***/
+	var define = false;
+
+	var common = __webpack_require__(6);
+
+	var header=__webpack_require__(7);
+	var body=__webpack_require__(8);
+
+	common.renderBody($('body'),header);
+	common.append($('body'),body);
+	common.setHeader($('#header-title'),"登陆");
+	common.setHeader($('#header-left'),"&#xf007a");
+	common.setHeader($('#header-right'),"&#xf0013");
+
+
+/***/ },
 /* 6 */
 /***/ function(module, exports) {
 
@@ -91,42 +120,10 @@
 	module.exports = "<header id=\"header\">	<div id=\"header-wrap\">		<span class=\"iconfont\" id=\"header-left\">左边</span>		<div id=\"header-title\">标题</div>		<span class=\"iconfont\" id=\"header-right\">右边</span>	</div></header>"
 
 /***/ },
-/* 8 */,
-/* 9 */,
-/* 10 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/*** IMPORTS FROM imports-loader ***/
-	var define = false;
-
-	__webpack_require__(11);
-
-
-
-/***/ },
-/* 11 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/*** IMPORTS FROM imports-loader ***/
-	var define = false;
-
-	var common = __webpack_require__(6);
-
-	var header=__webpack_require__(7);
-	var body=__webpack_require__(12);
-
-	common.renderBody($('body'),header);
-	common.append($('body'),body);
-	common.setHeader($('#header-title'),"注册");
-	common.setHeader($('#header-left'),"&#xf007a");
-	common.setHeader($('#header-right'),"&#xf0013");
-
-
-/***/ },
-/* 12 */
+/* 8 */
 /***/ function(module, exports) {
 
-	module.exports = "<div id=\"container\">	</div>"
+	module.exports = ""
 
 /***/ }
 /******/ ]);

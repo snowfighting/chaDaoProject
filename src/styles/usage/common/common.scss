@@ -3,17 +3,18 @@
 }
 
 $baseColor:#0dc441;
-@font-face{
-    font-family: 'iconfont';
-    src:url('/images/iconfont/iconfont.woff') format('woff'),
-        url('images/iconfont/iconfont.ttf') format('truetype');
-}
-@font-face{
-    font-family: 'iconfont';
-    src:url('/images/iconfont/iconfont0.woff') format('woff'),
-        url('images/iconfont/iconfont0.ttf') format('truetype');
-}
 
+@font-face {font-family: 'iconfont';
+    src: 
+    url('/build/images/iconfont/iconfont_fyc.woff') format('woff'), /* chrome、firefox */
+    url('/build/images/iconfont/iconfont_fyc.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+}
+@font-face {font-family: 'iconfont';
+    src: 
+    url('/build/images/iconfont/iconfont_fyc2.woff') format('woff'), /* chrome、firefox */
+    url('/build/images/iconfont/iconfont_fyc2.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  
+}
 .iconfont{
     font-family: iconfont;
 }

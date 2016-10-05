@@ -655,11 +655,11 @@ a {
 
 @font-face {
   font-family: 'iconfont';
-  src: url("/images/iconfont/iconfont.woff") format("woff"), url("images/iconfont/iconfont.ttf") format("truetype"); }
+  src: url("/build/images/iconfont/iconfont_fyc.woff") format("woff"), url("/build/images/iconfont/iconfont_fyc.ttf") format("truetype"); }
 
 @font-face {
   font-family: 'iconfont';
-  src: url("/images/iconfont/iconfont0.woff") format("woff"), url("images/iconfont/iconfont0.ttf") format("truetype"); }
+  src: url("/build/images/iconfont/iconfont_fyc2.woff") format("woff"), url("/build/images/iconfont/iconfont_fyc2.ttf") format("truetype"); }
 
 .iconfont {
   font-family: iconfont; }
