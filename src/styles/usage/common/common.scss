@@ -76,3 +76,28 @@ footer {
     }
   }
 }
+
+%header{
+    #header{
+        #header-wrap{
+            height: 0.44rem;
+            background: #F8F8F8;
+            @include flexbox();
+            text-align: center;
+            line-height: 0.44rem;  
+        #header-left{
+            width: 0.44rem;
+            font-size: 0.16rem;
+        }
+        #header-title{
+            @include flex(1);
+            font-size: 0.18rem;   
+            font-weight: bold;
+        }
+        #header-right{
+            width: 0.44rem;
+            font-size: 0.16rem;
+        }
+        }
+    }
+}
