@@ -40,25 +40,74 @@
 /******/ 	return __webpack_require__(0);
 /******/ })
 /************************************************************************/
-/******/ ({
-
-/***/ 0:
+/******/ ([
+/* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__(5);
 
 
 /***/ },
+/* 1 */,
+/* 2 */,
+/* 3 */,
+/* 4 */,
+/* 5 */
+/***/ function(module, exports, __webpack_require__) {
 
-/***/ 5:
+	/*** IMPORTS FROM imports-loader ***/
+	var define = false;
+
+	__webpack_require__(6);
+
+
+
+/***/ },
+/* 6 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/*** IMPORTS FROM imports-loader ***/
+	var define = false;
+
+	//var str = require('../tpls/car-details.string');
+	var footer = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../tpls/footer.string\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+
+	var common = __webpack_require__(7);
+
+	//common.renderBody($('body'),str);
+	//common.append($('.container'),footer);
+
+
+
+
+/***/ },
+/* 7 */
 /***/ function(module, exports) {
 
 	/*** IMPORTS FROM imports-loader ***/
 	var define = false;
 
+	var common = {
+	  renderBody: function ($el, str) {
+	    $el.prepend(str);
+	  },
+	  inner: function ($el, str) {
+	    $el.html(str);
+	  },
+	  append: function ($el, str) {
+	    $el.append(str);
+	  },
+
+	  switchPage: function (index) {
+	    $('#footer').on('tap', 'li', function () {
+	      location.href = $(this).attr('data-url');
+	    })
+	  }
+	};
+
+	module.exports = common;
 
 
 
 /***/ }
-
-/******/ });
+/******/ ]);
