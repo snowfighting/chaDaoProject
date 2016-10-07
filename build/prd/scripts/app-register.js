@@ -44,7 +44,7 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(5);
+	module.exports = __webpack_require__(8);
 
 
 /***/ },
@@ -52,37 +52,8 @@
 /* 2 */,
 /* 3 */,
 /* 4 */,
-/* 5 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/*** IMPORTS FROM imports-loader ***/
-	var define = false;
-
-	__webpack_require__(6);
-
-
-
-/***/ },
+/* 5 */,
 /* 6 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/*** IMPORTS FROM imports-loader ***/
-	var define = false;
-
-	var common = __webpack_require__(7);
-
-	var header=__webpack_require__(8);
-	var body=__webpack_require__(9);
-
-	common.renderBody($('body'),header);
-	common.append($('body'),body);
-	common.setHeader($('#header-title'),"注册");
-	common.setHeader($('#header-left'),"左");
-	common.setHeader($('#header-right'),"右");
-
-
-/***/ },
-/* 7 */
 /***/ function(module, exports) {
 
 	/*** IMPORTS FROM imports-loader ***/
@@ -117,13 +88,44 @@
 
 
 /***/ },
+/* 7 */,
 /* 8 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/*** IMPORTS FROM imports-loader ***/
+	var define = false;
+
+	__webpack_require__(9);
+
+
+
+/***/ },
+/* 9 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/*** IMPORTS FROM imports-loader ***/
+	var define = false;
+
+	var common = __webpack_require__(6);
+
+	var header=__webpack_require__(10);
+	var body=__webpack_require__(11);
+
+	common.renderBody($('body'),header);
+	common.append($('body'),body);
+	common.setHeader($('#header-title'),"注册");
+	common.setHeader($('#header-left'),"左");
+	common.setHeader($('#header-right'),"右");
+
+
+/***/ },
+/* 10 */
 /***/ function(module, exports) {
 
 	module.exports = "<header id=\"header\">	<div id=\"header-wrap\">		<span id=\"header-left\">左边</span>		<div id=\"header-title\">标题</div>		<span id=\"header-right\">右边</span>	</div></header>"
 
 /***/ },
-/* 9 */
+/* 11 */
 /***/ function(module, exports) {
 
 	module.exports = "<div id=\"container\">	</div>"
