@@ -29,7 +29,7 @@ gulp.task('webserver', function () {
   gulp.src('./')
     .pipe(webserver({
       host: 'localhost',
-      port: 90,
+      port: 80,
       directoryListing: {
         enable: true,
         path: './'

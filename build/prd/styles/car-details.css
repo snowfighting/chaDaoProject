@@ -662,20 +662,19 @@ a {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  flex-direction: column; }
+  justify-content: column; }
   .container > * {
     width: 100%; }
   .container header {
-    z-index: 999;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9999;
     height: 0.44rem;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: flex;
+    width: 100%;
     line-height: 44px; }
     .container header .header-l {
+      float: left;
       width: 0.4289rem;
       height: 0.4289rem; }
       .container header .header-l a {
@@ -693,12 +692,8 @@ a {
           margin: 20%;
           background: url("../../../../images/arrow_left_r.png") no-repeat center;
           background-size: 100%; }
-    .container header .header-nav {
-      -webkit-box-flex: 1;
-      -webkit-flex: 1;
-      flex: 1;
-      width: .1px; }
     .container header .header-r {
+      float: right;
       width: 0.5591rem;
       position: relative; }
       .container header .header-r .header-nav {
@@ -725,6 +720,7 @@ a {
           border: solid 0.5px #fff;
           border-radius: 50%; }
       .container header .header-r .head-nav-menu {
+        display: none;
         position: absolute;
         top: 0.31rem;
         right: 0.05rem; }
@@ -763,10 +759,47 @@ a {
                 height: 0.16rem;
                 vertical-align: middle;
                 margin-right: 0.066rem; }
+  .container .detail-header-s {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    display: none;
+    background: #F8F8F8;
+    float: left; }
+    .container .detail-header-s .header-c {
+      float: left;
+      width: 2.67rem;
+      padding: 0 0.5rem;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex; }
+      .container .detail-header-s .header-c li {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        flex: 1;
+        width: .1px;
+        text-align: center; }
+        .container .detail-header-s .header-c li a {
+          font-size: 0.154rem;
+          line-height: 0.44rem;
+          color: #333;
+          height: 0.44rem;
+          width: 0.3739rem;
+          display: block; }
+      .container .detail-header-s .header-c .cur a {
+        color: #ED5564;
+        font-size: 0.174rem;
+        font-weight: 600;
+        border-bottom: solid 2px #ED5564; }
   .container .swiper-container {
     background: #fff;
     width: 100%;
     height: 3.52rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
     margin-top: -0.44rem; }
     .container .swiper-container .swiper-wrapper {
       width: 100%;
@@ -777,290 +810,302 @@ a {
           width: 100% !important;
           height: 100%; }
   .container section {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-    flex: 1;
-    width: .1px;
-    overflow: auto;
-    width: 100%; }
-    .container section .section-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex; }
+    .container section .wai {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+      flex: 1;
+      width: .1px;
+      width: 100%;
+      overflow: auto;
       height: 100%;
-      color: #000; }
-      .container section .section-container .goods-detail-t {
-        width: 100%;
-        height: 1.81rem;
-        background: #fff;
-        padding: 0 0.12rem;
-        border-top: solid 1px #eee;
-        font-size: 16px; }
-        .container section .section-container .goods-detail-t .goods-detail-name {
+      margin-bottom: 0.44rem; }
+      .container section .wai .section-container {
+        color: #000; }
+        .container section .wai .section-container .scroll-opa {
           width: 100%;
-          height: 0.388rem;
-          line-height: 0.38rem; }
-        .container section .section-container .goods-detail-t .goods-detail-price {
-          height: 0.27rem;
-          line-height: 0.27rem; }
-          .container section .section-container .goods-detail-t .goods-detail-price dl {
-            float: left;
-            width: 2.50rem; }
-            .container section .section-container .goods-detail-t .goods-detail-price dl dt {
-              float: left;
-              font-size: 0.12rem;
-              color: #db4453;
-              line-height: 0.22rem; }
-              .container section .section-container .goods-detail-t .goods-detail-price dl dt i {
-                font-size: 0.22rem; }
-            .container section .section-container .goods-detail-t .goods-detail-price dl dd {
-              float: left;
-              font-size: 0.12rem;
-              color: #db4453;
-              line-height: 0.22rem; }
-              .container section .section-container .goods-detail-t .goods-detail-price dl dd i {
-                font-size: 0.22rem;
-                color: #000;
-                text-decoration: line-through; }
-          .container section .section-container .goods-detail-t .goods-detail-price .sold {
-            float: right;
-            font-size: 0.12rem;
-            line-height: 0.22rem; }
-        .container section .section-container .goods-detail-t .goods-detail-item {
-          border-bottom: solid 1px #eee;
+          height: 3.08rem;
+          background: rgba(255, 255, 255, 0); }
+        .container section .wai .section-container .goods-detail-t {
           width: 100%;
-          height: 0.65rem;
-          padding: 0.11rem 0; }
-          .container section .section-container .goods-detail-t .goods-detail-item .item-name {
-            float: left;
-            width: 0.35rem;
-            font-size: 0.13rem;
-            color: #888;
-            line-height: 0.20rem; }
-          .container section .section-container .goods-detail-t .goods-detail-item .item-con {
-            float: left;
-            width: 2rem;
-            height: 0.42rem; }
-            .container section .section-container .goods-detail-t .goods-detail-item .item-con .goods-detail-freight {
-              width: 100%;
-              height: 100%; }
-              .container section .section-container .goods-detail-t .goods-detail-item .item-con .goods-detail-freight dt {
-                font-size: 0.13rem;
-                color: #333; }
-                .container section .section-container .goods-detail-t .goods-detail-item .item-con .goods-detail-freight dt b {
-                  color: #ED5564;
-                  margin-left: 0.11rem; }
-              .container section .section-container .goods-detail-t .goods-detail-item .item-con .goods-detail-freight dd {
+          height: 1.81rem;
+          background: #fff;
+          padding: 0 0.12rem;
+          border-top: solid 1px #eee;
+          font-size: 16px; }
+          .container section .wai .section-container .goods-detail-t .goods-detail-name {
+            width: 100%;
+            height: 0.388rem;
+            line-height: 0.38rem; }
+          .container section .wai .section-container .goods-detail-t .goods-detail-price {
+            height: 0.27rem;
+            line-height: 0.27rem; }
+            .container section .wai .section-container .goods-detail-t .goods-detail-price dl {
+              float: left;
+              width: 2.50rem; }
+              .container section .wai .section-container .goods-detail-t .goods-detail-price dl dt {
+                float: left;
                 font-size: 0.12rem;
-                color: #888; }
-          .container section .section-container .goods-detail-t .goods-detail-item .item-location {
-            float: right;
-            width: 0.18rem;
-            height: 0.20rem;
-            background: url("../../../../images/location_b.png") no-repeat center;
-            background-size: 100%;
-            opacity: 0.55; }
-        .container section .section-container .goods-detail-t .goods-detail-select {
-          padding: 0.11rem 0;
-          border-bottom: solid 1px #eee;
-          width: 100%;
-          height: 0.51rem; }
-          .container section .section-container .goods-detail-t .goods-detail-select .item-name {
-            float: left;
-            width: 0.35rem;
-            height: 0.20rem;
-            font-size: 0.13rem;
-            color: #888;
-            line-height: 0.20rem; }
-          .container section .section-container .goods-detail-t .goods-detail-select .item-con {
-            float: left;
-            width: 0.35rem;
-            height: 0.20rem;
-            color: #777;
-            padding: 0 0.044rem;
-            line-height: 0.20rem;
-            font-size: 0.12rem;
-            border: solid 1px #ccc; }
-          .container section .section-container .goods-detail-t .goods-detail-select .item-more {
-            float: right;
-            width: 0.18rem;
-            height: 0.20rem;
-            opacity: 0.4;
-            background: url("../../../../images/arrow_right_b.png") no-repeat center;
-            background-size: 80%; }
-      .container section .section-container .goods-detail-c {
-        background: #fff;
-        padding: 0 0.11rem;
-        margin-top: 0.11rem;
-        border-top: solid 1px #eee;
-        border-bottom: solid 1px #eee; }
-        .container section .section-container .goods-detail-c .title {
-          width: 100%;
-          height: 0.42rem;
-          line-height: 0.42rem; }
-          .container section .section-container .goods-detail-c .title a {
-            height: 0.20rem;
-            padding: 0.11rem 0;
-            color: #888;
-            font-size: 0.12rem; }
-            .container section .section-container .goods-detail-c .title a .goods-eval {
-              float: left; }
-            .container section .section-container .goods-detail-c .title a .rate {
+                color: #db4453;
+                line-height: 0.22rem; }
+                .container section .wai .section-container .goods-detail-t .goods-detail-price dl dt i {
+                  font-size: 0.22rem; }
+              .container section .wai .section-container .goods-detail-t .goods-detail-price dl dd {
+                float: left;
+                font-size: 0.12rem;
+                color: #db4453;
+                line-height: 0.22rem; }
+                .container section .wai .section-container .goods-detail-t .goods-detail-price dl dd i {
+                  font-size: 0.22rem;
+                  color: #000;
+                  text-decoration: line-through; }
+            .container section .wai .section-container .goods-detail-t .goods-detail-price .sold {
+              float: right;
+              font-size: 0.12rem;
+              line-height: 0.22rem; }
+          .container section .wai .section-container .goods-detail-t .goods-detail-item {
+            border-bottom: solid 1px #eee;
+            width: 100%;
+            height: 0.65rem;
+            padding: 0.11rem 0; }
+            .container section .wai .section-container .goods-detail-t .goods-detail-item .item-name {
               float: left;
-              width: 1.92rem;
-              margin-left: 0.22rem;
-              color: #ED5564; }
-              .container section .section-container .goods-detail-c .title a .rate b {
-                font-size: 0.13rem;
-                font-weight: bold;
-                margin-left: 0.044rem; }
-            .container section .section-container .goods-detail-c .title a .rate-num {
+              width: 0.35rem;
+              font-size: 0.13rem;
+              color: #888;
+              line-height: 0.20rem; }
+            .container section .wai .section-container .goods-detail-t .goods-detail-item .item-con {
               float: left;
-              width: 0.65rem;
-              color: #888888; }
-            .container section .section-container .goods-detail-c .title a .item-more {
+              width: 2rem;
+              height: 0.42rem; }
+              .container section .wai .section-container .goods-detail-t .goods-detail-item .item-con .goods-detail-freight {
+                width: 100%;
+                height: 100%; }
+                .container section .wai .section-container .goods-detail-t .goods-detail-item .item-con .goods-detail-freight dt {
+                  font-size: 0.13rem;
+                  color: #333; }
+                  .container section .wai .section-container .goods-detail-t .goods-detail-item .item-con .goods-detail-freight dt b {
+                    color: #ED5564;
+                    margin-left: 0.11rem; }
+                .container section .wai .section-container .goods-detail-t .goods-detail-item .item-con .goods-detail-freight dd {
+                  font-size: 0.12rem;
+                  color: #888; }
+            .container section .wai .section-container .goods-detail-t .goods-detail-item .item-location {
               float: right;
               width: 0.18rem;
               height: 0.20rem;
-              background: url("../../../../images/arrow_right_b.png") no-repeat center;
-              background-size: 80%;
-              opacity: 0.4;
-              margin-top: 0.11rem; }
-        .container section .section-container .goods-detail-c .commont-info {
-          width: 100%; }
-          .container section .section-container .goods-detail-c .commont-info dl {
-            height: 0.58rem;
-            padding-bottom: 0.088rem;
-            border-top: solid 1px #eee;
-            font-size: 0.12rem; }
-            .container section .section-container .goods-detail-c .commont-info dl dt {
-              height: 0.33rem;
-              padding: 0.088rem 0 0.044rem;
+              background: url("../../../../images/location_b.png") no-repeat center;
+              background-size: 100%;
+              opacity: 0.55; }
+          .container section .wai .section-container .goods-detail-t .goods-detail-select {
+            padding: 0.11rem 0;
+            border-bottom: solid 1px #eee;
+            width: 100%;
+            height: 0.51rem; }
+            .container section .wai .section-container .goods-detail-t .goods-detail-select .item-name {
+              float: left;
+              width: 0.35rem;
+              height: 0.20rem;
+              font-size: 0.13rem;
+              color: #888;
               line-height: 0.20rem; }
-              .container section .section-container .goods-detail-c .commont-info dl dt .goods-raty {
-                float: left;
-                width: 0.66rem;
-                height: 0.11rem; }
-                .container section .section-container .goods-detail-c .commont-info dl dt .goods-raty i {
-                  display: block;
-                  height: 0.11rem;
-                  background: url("../../../../images/star_r.png") repeat-x 0 0;
-                  background-size: contain; }
-              .container section .section-container .goods-detail-c .commont-info dl dt .user-name {
-                float: right;
-                color: #555; }
-            .container section .section-container .goods-detail-c .commont-info dl dd {
-              line-height: 0.15rem;
-              height: 0.15rem; }
-      .container section .section-container .goods-detail-store {
-        padding: 0 0.11rem;
-        margin: 0.11rem 0;
-        background: #fff;
-        border: solid 1px #eee;
-        width: 100%;
-        height: 0.75rem; }
-        .container section .section-container .goods-detail-store a .store-name {
-          height: 0.20rem;
-          line-height: 0.20rem;
-          padding: 0.11rem 0 0.055rem 0;
-          color: #333;
-          font-size: 0.16rem; }
-          .container section .section-container .goods-detail-store a .store-name .icon-store {
-            width: 0.18rem;
-            height: 0.20rem;
-            float: left;
-            vertical-align: top;
-            margin-right: 0.044rem;
-            background: url(../../../../images/store_b.png) no-repeat center;
-            background-size: 80%;
-            opacity: 0.75; }
-          .container section .section-container .goods-detail-store a .store-name .icon-mall {
-            color: #ED5564;
-            font-size: 0.12rem;
-            margin-left: 0.11rem; }
-        .container section .section-container .goods-detail-store a .store-rate {
-          display: -webkit-box;
-          display: -webkit-flex;
-          display: flex;
-          width: 100%;
-          height: 0.36rem;
+            .container section .wai .section-container .goods-detail-t .goods-detail-select .item-con {
+              float: left;
+              width: 0.35rem;
+              height: 0.20rem;
+              color: #777;
+              padding: 0 0.044rem;
+              line-height: 0.20rem;
+              font-size: 0.12rem;
+              border: solid 1px #ccc; }
+            .container section .wai .section-container .goods-detail-t .goods-detail-select .item-more {
+              float: right;
+              width: 0.18rem;
+              height: 0.20rem;
+              opacity: 0.4;
+              background: url("../../../../images/arrow_right_b.png") no-repeat center;
+              background-size: 80%; }
+        .container section .wai .section-container .goods-detail-c {
+          background: #fff;
+          padding: 0 0.11rem;
+          margin-top: 0.11rem;
           border-top: solid 1px #eee;
-          padding: 0.088rem 0 0.11rem 0; }
-          .container section .section-container .goods-detail-store a .store-rate .equal {
-            -webkit-box-flex: 1;
-            -webkit-flex: 1;
-            flex: 1;
-            width: .1px;
-            height: 0.16rem;
-            line-height: 0.16rem;
-            font-size: 0.12rem;
-            color: #888; }
-            .container section .section-container .goods-detail-store a .store-rate .equal b {
-              color: #ED5564;
-              font-size: 0.16rem;
-              font-weight: bold;
-              vertical-align: middle; }
-            .container section .section-container .goods-detail-store a .store-rate .equal i {
-              display: inline-block;
-              vertical-align: middle;
-              width: 0.16rem;
-              height: 0.16rem;
-              text-align: center;
-              line-height: 0.16rem;
-              border-radius: 0.02rem;
-              background: #ED5564;
-              color: #fff; }
-      .container section .section-container .goods-detail-recom {
-        background: #fff;
-        padding-left: 0.11rem;
-        margin: 0.11rem 0;
-        border: solid 1px #eee;
-        width: 100%;
-        height: 3.05rem; }
-        .container section .section-container .goods-detail-recom h4 {
-          height: 0.37rem;
-          padding: 0.088rem 0;
-          font-size: 0.13rem;
-          color: #888; }
-        .container section .section-container .goods-detail-recom ul {
-          display: -webkit-box;
-          display: -webkit-flex;
-          display: flex;
-          -webkit-flex-wrap: wrap;
-          flex-wrap: wrap;
-          justify-content: space-around;
-          -webkit-justify-content: space-around;
-          justify-content: space-around; }
-          .container section .section-container .goods-detail-recom ul li a dl {
-            height: 1.28rem; }
-            .container section .section-container .goods-detail-recom ul li a dl dt {
-              border: solid 1px #eee;
-              width: 0.73rem;
-              height: 0.73rem; }
-              .container section .section-container .goods-detail-recom ul li a dl dt img {
-                width: 100%;
-                height: 100%; }
-            .container section .section-container .goods-detail-recom ul li a dl dd {
-              width: 0.80rem;
-              height: 0.47rem;
-              margin-top: 0.044rem;
+          border-bottom: solid 1px #eee; }
+          .container section .wai .section-container .goods-detail-c .title {
+            width: 100%;
+            height: 0.42rem;
+            line-height: 0.42rem; }
+            .container section .wai .section-container .goods-detail-c .title a {
+              height: 0.20rem;
+              padding: 0.11rem 0;
+              color: #888;
               font-size: 0.12rem; }
-              .container section .section-container .goods-detail-recom ul li a dl dd span {
-                height: 0.26rem;
-                line-height: 0.13rem;
-                color: #777;
-                margin-bottom: 0.044rem; }
-              .container section .section-container .goods-detail-recom ul li a dl dd b {
-                font-weight: normal;
-                color: #333; }
-                .container section .section-container .goods-detail-recom ul li a dl dd b i {
-                  font-size: 0.14rem; }
-      .container section .section-container .goods-detail-bottom {
-        height: 0.27rem;
-        line-height: 0.27rem;
-        text-align: center;
-        margin: 0.11rem 0 0.11rem 0; }
-        .container section .section-container .goods-detail-bottom a {
-          color: #999999;
-          font-size: 0.13rem; }
+              .container section .wai .section-container .goods-detail-c .title a .goods-eval {
+                float: left; }
+              .container section .wai .section-container .goods-detail-c .title a .rate {
+                float: left;
+                width: 1.92rem;
+                margin-left: 0.22rem;
+                color: #ED5564; }
+                .container section .wai .section-container .goods-detail-c .title a .rate b {
+                  font-size: 0.13rem;
+                  font-weight: bold;
+                  margin-left: 0.044rem; }
+              .container section .wai .section-container .goods-detail-c .title a .rate-num {
+                float: left;
+                width: 0.65rem;
+                color: #888888; }
+              .container section .wai .section-container .goods-detail-c .title a .item-more {
+                float: right;
+                width: 0.18rem;
+                height: 0.20rem;
+                background: url("../../../../images/arrow_right_b.png") no-repeat center;
+                background-size: 80%;
+                opacity: 0.4;
+                margin-top: 0.11rem; }
+          .container section .wai .section-container .goods-detail-c .commont-info {
+            width: 100%; }
+            .container section .wai .section-container .goods-detail-c .commont-info dl {
+              height: 0.58rem;
+              padding-bottom: 0.088rem;
+              border-top: solid 1px #eee;
+              font-size: 0.12rem; }
+              .container section .wai .section-container .goods-detail-c .commont-info dl dt {
+                height: 0.33rem;
+                padding: 0.088rem 0 0.044rem;
+                line-height: 0.20rem; }
+                .container section .wai .section-container .goods-detail-c .commont-info dl dt .goods-raty {
+                  float: left;
+                  width: 0.66rem;
+                  height: 0.11rem; }
+                  .container section .wai .section-container .goods-detail-c .commont-info dl dt .goods-raty i {
+                    display: block;
+                    height: 0.11rem;
+                    background: url("../../../../images/star_r.png") repeat-x 0 0;
+                    background-size: contain; }
+                .container section .wai .section-container .goods-detail-c .commont-info dl dt .user-name {
+                  float: right;
+                  color: #555; }
+              .container section .wai .section-container .goods-detail-c .commont-info dl dd {
+                line-height: 0.15rem;
+                height: 0.15rem; }
+        .container section .wai .section-container .goods-detail-store {
+          padding: 0 0.11rem;
+          margin: 0.11rem 0;
+          background: #fff;
+          border: solid 1px #eee;
+          width: 100%;
+          height: 0.75rem; }
+          .container section .wai .section-container .goods-detail-store a .store-name {
+            height: 0.20rem;
+            line-height: 0.20rem;
+            padding: 0.11rem 0 0.055rem;
+            color: #333;
+            font-size: 0.16rem; }
+            .container section .wai .section-container .goods-detail-store a .store-name .icon-store {
+              width: 0.18rem;
+              height: 0.20rem;
+              float: left;
+              vertical-align: top;
+              margin-right: 0.044rem;
+              background: url(../../../../images/store_b.png) no-repeat center;
+              background-size: 80%;
+              opacity: 0.75; }
+            .container section .wai .section-container .goods-detail-store a .store-name .icon-mall {
+              color: #ED5564;
+              font-size: 0.12rem;
+              margin-left: 0.11rem; }
+          .container section .wai .section-container .goods-detail-store a .store-rate {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex;
+            width: 100%;
+            height: 0.36rem;
+            border-top: solid 1px #eee;
+            padding: 0.088rem 0 0.11rem; }
+            .container section .wai .section-container .goods-detail-store a .store-rate .equal {
+              -webkit-box-flex: 1;
+              -webkit-flex: 1;
+              flex: 1;
+              width: .1px;
+              height: 0.16rem;
+              line-height: 0.16rem;
+              font-size: 0.12rem;
+              color: #888; }
+              .container section .wai .section-container .goods-detail-store a .store-rate .equal b {
+                color: #ED5564;
+                font-size: 0.16rem;
+                font-weight: bold;
+                vertical-align: middle; }
+              .container section .wai .section-container .goods-detail-store a .store-rate .equal i {
+                display: inline-block;
+                vertical-align: middle;
+                width: 0.16rem;
+                height: 0.16rem;
+                text-align: center;
+                line-height: 0.16rem;
+                border-radius: 0.02rem;
+                background: #ED5564;
+                color: #fff; }
+        .container section .wai .section-container .goods-detail-recom {
+          background: #fff;
+          padding-left: 0.11rem;
+          margin: 0.11rem 0;
+          border: solid 1px #eee;
+          width: 100%;
+          height: 3.05rem; }
+          .container section .wai .section-container .goods-detail-recom h4 {
+            height: 0.37rem;
+            padding: 0.088rem 0;
+            font-size: 0.13rem;
+            color: #888; }
+          .container section .wai .section-container .goods-detail-recom ul {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            -webkit-justify-content: space-around;
+            justify-content: space-around; }
+            .container section .wai .section-container .goods-detail-recom ul li a dl {
+              height: 1.28rem; }
+              .container section .wai .section-container .goods-detail-recom ul li a dl dt {
+                border: solid 1px #eee;
+                width: 0.73rem;
+                height: 0.73rem; }
+                .container section .wai .section-container .goods-detail-recom ul li a dl dt img {
+                  width: 100%;
+                  height: 100%; }
+              .container section .wai .section-container .goods-detail-recom ul li a dl dd {
+                width: 0.80rem;
+                height: 0.47rem;
+                margin-top: 0.044rem;
+                font-size: 0.12rem; }
+                .container section .wai .section-container .goods-detail-recom ul li a dl dd span {
+                  height: 0.26rem;
+                  line-height: 0.13rem;
+                  color: #777;
+                  margin-bottom: 0.044rem; }
+                .container section .wai .section-container .goods-detail-recom ul li a dl dd b {
+                  font-weight: normal;
+                  color: #333; }
+                  .container section .wai .section-container .goods-detail-recom ul li a dl dd b i {
+                    font-size: 0.14rem; }
+        .container section .wai .section-container .goods-detail-bottom {
+          height: 0.27rem;
+          line-height: 0.27rem;
+          text-align: center;
+          margin: 0.11rem 0; }
+          .container section .wai .section-container .goods-detail-bottom a {
+            color: #999999;
+            font-size: 0.13rem; }
   .container footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
     height: 0.44rem;
     background: rgba(245, 245, 245, 0.95);
     display: -webkit-box;
