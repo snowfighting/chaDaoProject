@@ -1,3 +1,30 @@
 <div id="container">
-	
+	<ul>
+		<li>
+			<span>手机号</span>
+			<div class="inputbox">
+				<input type="text" placeholder="请输入手机号码" id="phonenumber"/>
+				<span id="phoneInfo" class="iconfont">&#xe6a0;</span>
+			</div>
+			
+		</li>
+		<li>
+			<span>动态码</span>
+			<div class="inputbox">
+				<input type="text" placeholder="请输入验证码" id="code"/>
+				<a href="#">短信获取</a>
+				<span id="codeInfo" class="iconfont">&#xe6a0;</span>
+			</div>	
+		</li>
+		<li>
+			<span>密码</span>
+			<div class="inputbox">
+				<input type="password" placeholder="请输入密码" id="password"/>
+				<span id="passInfo" class="iconfont">&#xe6a0;</span>
+			</div>
+			
+		</li>
+		<input type="checkbox" name="" id="showBtn" value="" />显示密码
+		<input type="button" value="注册"  id="regBtn"/>
+	</ul>
 </div>

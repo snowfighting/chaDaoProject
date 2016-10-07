@@ -1,0 +1,234 @@
+
+ .container{
+        @include flexbox();
+        @include flex-direction(column);
+        width: 100%;
+        height: 100%;  
+        .container-wrap{
+            @include flex(1);
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            section{                          
+                .person_top{
+                    @include flexbox();
+                    @include flex-direction(column);
+                    width: 100%;
+                    height: 2.75rem;
+                    background: url('/build/images/member_top_bg.png') #ED5564;
+                .top{
+                    color: #fff;
+                    width: 100%;
+                    height: 0.4rem;
+                    background: rgba(#F8F8F8,0);
+                    position: fixed;
+                    @include flexbox();
+                    
+                    span{
+                        font-size: 0.25rem;
+                        font-weight: bold;
+                        @include flex(1);
+                        text-align: left;
+                        margin-left: 0.1rem;
+                    }
+                    b{  
+                        @include flex(1);
+                        font-size: 0.25rem;
+                        text-align: right;
+                        margin-right: 0.1rem;
+                        
+                    }
+                }
+                .center{
+                    @include flexbox();             
+                    @include flex(1);
+                    width: 100%;
+                    @include flex-direction(column);
+                    @include align-items(center);
+                    @include justify-content(center);
+                    img{
+                        width: 1rem;
+                        height: 1rem;
+                        border-radius: 50%;
+                    }
+                    span{
+                        display: inline-block;
+                        font-size: 0.2rem;
+                        color: #fff;
+                    }
+                }
+                .bottom{
+                    height: 0.75rem;
+                    background: rgba(#000,0.4);
+                    ul{
+                        @include flexbox();
+                        height: 100%;
+                        li{
+                            @include flex(1);
+                            text-align: center;
+                            align-items: center;
+                            @include flexbox();
+                            @include flex-direction(column);
+                            color: #fff;
+                            height: 100%;
+                            @include justify-content(center);
+                            span{
+                                font-size: 0.14rem;
+                            }
+                            b{
+                                font-size: 0.14rem;
+                            }
+                        }
+                    }
+                }
+            }
+                .orders,.money{
+                    width: 100%;
+                    height: 2.5rem;
+                    background: #fff;
+                    margin-top: .1rem;
+                    margin-bottom: .1rem;
+                    color: #999;
+                    ul{
+                            width: 100%;
+                            height: 100%;   
+                            @include flexbox(); 
+                            @include flex-wrap(wrap);
+                            li{
+                                @include flexbox();
+                                @include flex-direction(column); 
+                                width: 25%;
+                                height: 50%;
+                                justify-content: center;
+                                text-align: center;
+                                i{
+                                    font-size: 0.25rem;
+                                }
+                                span{
+                                    font-size: 0.14rem;
+                                }
+                            }
+                        }
+                    
+                }
+                .orders{
+                    .orders-title{
+                        width: 100%;
+                        height: 0.5rem; 
+                        @include flexbox();
+                        line-height: 0.5rem;
+                        border-bottom: 0.5px solid #f4f4f4; 
+                        i{
+                            width: .4rem;
+                            text-align: center;
+                            color: #58BADF;
+                            font-weight: bold;
+                        }
+                        span{
+                            @include flex(1);
+                            font-size: 0.16rem;
+                            color: #111;
+                        }
+                        b{     
+                            text-align: center;
+                        }
+                        .icon{
+                            transform: rotate(180deg);
+                            text-align: center;
+                             margin-right: 0.1rem;
+                        }     
+                    }
+                    .orders-content{
+                        width: 100%;
+                        height: 2rem;
+                    }
+                }
+                .money{
+                    .money-title{
+                        width: 100%;
+                        height: 0.5rem; 
+                        @include flexbox();
+                        line-height: 0.5rem;
+                        border-bottom: 0.5px solid #f4f4f4; 
+                        i{
+                            width: .4rem;
+                            text-align: center;
+                            color: #58BADF;
+                             font-weight: bold;
+                        }
+                        span{
+                            @include flex(1);
+                            font-size: 0.16rem;
+                            color: #111;
+                        }
+                       b{     
+                            text-align: center;
+                        }
+                        .icon{
+                            transform: rotate(180deg);
+                            text-align: center;
+                            margin-right: 0.1rem;
+                        }    
+                    }
+                    .money-content{
+                        width: 100%;
+                        height: 2rem;
+                    
+                        
+                    }
+                }
+                .address,.usersetting{
+                    width: 100%;
+                    @include flexbox();
+                    height: 0.5rem;
+                    background: #fff;
+                    line-height: 0.5rem;
+                    border-bottom: 0.5px solid #F4F4F4;
+                    i{
+                        width: .4rem;
+                        text-align: center;
+                        color: #58BADF;
+                         font-weight: bold;
+                    }
+                    span{
+                        @include flex(1);
+                        font-size: 0.16rem;
+                        color: #111;
+                    }
+                    b{
+                        width: .4rem;
+                        transform: rotate(180deg);
+                        text-align: center;
+                    }
+                }
+                .category{
+                    width: 100%;
+                    height: .5rem;
+                    background: #fff;
+                    margin-top: .1rem;
+                    ul{
+                        @include flexbox();
+                        width: 100%;
+                        height: 100%;
+                        
+                        li{
+                            @include flex(1);
+                            text-align: center;
+                            line-height: .5rem;
+                            a{
+                                display: inline-block;
+                                width: 100%;
+                                border-right: 0.5px solid #f4f4f4;
+                                font-size: .16rem;
+                                color: #555;
+                            }
+                    
+                        }
+                    }
+                }
+            }
+            
+        }      
+        @extend %footer;
+        
+    }

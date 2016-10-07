@@ -586,8 +586,7 @@ textarea {
 input,
 textarea,
 button,
-select
-a {
+select a {
   outline: 0 none; }
 
 input,
@@ -683,3 +682,305 @@ a {
 
 .iconfont {
   font-family: iconfont; }
+
+.container footer {
+  height: 44px;
+  background: #eee;
+  width: 100%; }
+  .container footer ul {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    border-top: solid 0.5px gainsboro; }
+    .container footer ul li {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+      flex: 1;
+      width: .1px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center; }
+      .container footer ul li b, .container footer ul li i {
+        font-weight: normal;
+        font-size: 12px;
+        color: #999999; }
+      .container footer ul li i {
+        font-size: 18px; }
+
+.container #header #header-wrap {
+  height: 0.44rem;
+  background: #F8F8F8;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  text-align: center;
+  line-height: 0.44rem;
+  border-bottom: 0.5px solid #f4f4f4; }
+  .container #header #header-wrap #header-left {
+    width: 0.44rem;
+    font-size: 0.16rem; }
+  .container #header #header-wrap #header-title {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    width: .1px;
+    font-size: 0.18rem;
+    font-weight: bold; }
+  .container #header #header-wrap #header-right {
+    width: 0.44rem;
+    font-size: 0.16rem; }
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  flex-direction: column; }
+  .container section {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    width: .1px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    height: 100%; }
+    .container section .searchbox {
+      height: .44rem;
+      background: #FAFAFA;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      align-items: center;
+      border-bottom: 0.5px solid #f3f3f3; }
+      .container section .searchbox #text {
+        -webkit-box-flex: 10;
+        -webkit-flex: 10;
+        flex: 10;
+        width: .1px;
+        height: 0.38rem;
+        margin-left: 0.05rem;
+        border: 0;
+        border-radius: 0.05rem;
+        background: #EEE;
+        padding-left: 0.05rem; }
+      .container section .searchbox #btn {
+        -webkit-box-flex: 2;
+        -webkit-flex: 2;
+        flex: 2;
+        width: .1px;
+        height: .38rem;
+        margin-right: 0.05rem;
+        border: 0;
+        background: #FAFAFA;
+        font-size: 0.2rem; }
+    .container section nav {
+      width: 100%;
+      height: 0.42rem;
+      background: #fff;
+      line-height: 0.42rem; }
+      .container section nav ul {
+        width: 100%;
+        height: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex; }
+        .container section nav ul li {
+          -webkit-box-flex: 1;
+          -webkit-flex: 1;
+          flex: 1;
+          width: .1px;
+          text-align: center; }
+          .container section nav ul li span {
+            display: inline-block;
+            color: #333;
+            font-size: 0.14rem;
+            height: 0.42rem; }
+          .container section nav ul li .active {
+            border-bottom: 1px solid #ED5564;
+            color: #ED5564; }
+    .container section .content {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+      flex: 1;
+      width: .1px;
+      width: 100%; }
+      .container section .content .swiper-container {
+        width: 100%;
+        height: 100%; }
+        .container section .content .swiper-container .swiper-slide {
+          width: 100%;
+          overflow-y: scroll;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          .container section .content .swiper-container .swiper-slide .emptyinfo {
+            width: 2.2rem;
+            height: 2rem;
+            justify-content: center;
+            align-items: center; }
+            .container section .content .swiper-container .swiper-slide .emptyinfo i {
+              width: .7rem;
+              height: .7rem;
+              border-radius: 50%;
+              font-size: 0.48rem;
+              background: #DDD;
+              color: #fff;
+              text-align: center;
+              line-height: 0.7rem; }
+            .container section .content .swiper-container .swiper-slide .emptyinfo span {
+              font-size: 0.16rem;
+              margin-top: .06rem; }
+            .container section .content .swiper-container .swiper-slide .emptyinfo b {
+              font-size: 0.14rem;
+              font-weight: normal;
+              color: #999;
+              margin-top: .06rem; }
+            .container section .content .swiper-container .swiper-slide .emptyinfo a {
+              display: block;
+              width: 0.68rem;
+              height: 0.26rem;
+              background: #fff;
+              border-bottom: 1px solid #CCC;
+              text-align: center;
+              line-height: 0.26rem;
+              color: #555;
+              margin-top: .1rem; }
+          .container section .content .swiper-container .swiper-slide .head {
+            text-align: center;
+            height: 35px;
+            line-height: 35px; }
+          .container section .content .swiper-container .swiper-slide .head img {
+            margin-bottom: 0px;
+            display: inline-block;
+            transform: rotate(180deg);
+            -webkit-transform: rotate(180deg);
+            transition: transform 150ms;
+            -webkit-transition: transform 150ms; }
+          .container section .content .swiper-container .swiper-slide .up {
+            transform: rotate(360deg) !important;
+            -webkit-transform: rotate(360deg) !important; }
+          .container section .content .swiper-container .swiper-slide .foot {
+            text-align: center;
+            height: 35px;
+            line-height: 35px; }
+          .container section .content .swiper-container .swiper-slide .foot img {
+            margin-bottom: 0px;
+            display: inline-block;
+            /*transform: rotate(0deg);*/
+            /*-webkit-transform: rotate(0deg);*/
+            transition: transform 150ms;
+            -webkit-transition: transform 150ms; }
+          .container section .content .swiper-container .swiper-slide .down {
+            transform: rotate(180deg) !important;
+            -webkit-transform: rotate(180deg) !important; }
+          .container section .content .swiper-container .swiper-slide .item #order-title {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex;
+            height: .42rem;
+            width: 100%;
+            line-height: .42rem;
+            background: #fff;
+            border-bottom: 1px solid #F0F0F0;
+            border-top: 1px solid #F0F0F0; }
+            .container section .content .swiper-container .swiper-slide .item #order-title i {
+              margin: 0 .1rem 0 .1rem; }
+            .container section .content .swiper-container .swiper-slide .item #order-title .title {
+              -webkit-box-flex: 1;
+              -webkit-flex: 1;
+              flex: 1;
+              width: .1px; }
+            .container section .content .swiper-container .swiper-slide .item #order-title #status {
+              align-self: flex-end;
+              margin: 0 .1rem 0 .1rem; }
+          .container section .content .swiper-container .swiper-slide .item .order-com {
+            height: .78rem;
+            background: #fff;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex;
+            padding-top: .1rem; }
+            .container section .content .swiper-container .swiper-slide .item .order-com img {
+              width: .6rem;
+              height: .6rem;
+              margin: 0 .1rem 0 .1rem; }
+            .container section .content .swiper-container .swiper-slide .item .order-com p {
+              color: #333; }
+            .container section .content .swiper-container .swiper-slide .item .order-com .priceandnum {
+              text-align: right;
+              margin-right: .1rem; }
+          .container section .content .swiper-container .swiper-slide .item .total {
+            height: .42rem;
+            background: #fff;
+            border: 1px solid #F0F0F0;
+            line-height: .42rem;
+            text-align: right; }
+            .container section .content .swiper-container .swiper-slide .item .total p {
+              padding-right: .1rem; }
+              .container section .content .swiper-container .swiper-slide .item .total p .total_num {
+                font-weight: bold; }
+              .container section .content .swiper-container .swiper-slide .item .total p .total_price {
+                font-weight: 600;
+                color: #ED5564;
+                font-size: .18rem; }
+          .container section .content .swiper-container .swiper-slide .item .cancel {
+            height: .42rem;
+            background: #fff;
+            border-bottom: 1px solid #F0F0F0;
+            text-align: right;
+            line-height: .42rem; }
+            .container section .content .swiper-container .swiper-slide .item .cancel a {
+              display: inline-block;
+              width: .68rem;
+              height: .26rem;
+              border: 1px solid #CCC;
+              border-radius: .03rem;
+              font-size: .14rem;
+              color: #555;
+              vertical-align: middle;
+              line-height: .26rem;
+              margin-right: .1rem;
+              text-align: center; }
+          .container section .content .swiper-container .swiper-slide .item button {
+            width: 90%;
+            margin: .05rem 5% .05rem 5%;
+            height: .39rem;
+            background: #ED5564;
+            border-radius: .05rem;
+            border: 0;
+            color: #fff;
+            font-size: .16rem;
+            font-weight: bold; }

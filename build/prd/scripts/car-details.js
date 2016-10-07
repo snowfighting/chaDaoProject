@@ -40,26 +40,17 @@
 /******/ 	return __webpack_require__(0);
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */
+/******/ ({
+
+/***/ 0:
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(13);
+	module.exports = __webpack_require__(20);
 
 
 /***/ },
-<<<<<<< HEAD
 
-/***/ 13:
-=======
-/* 1 */,
-/* 2 */,
-/* 3 */,
-/* 4 */,
-/* 5 */,
-/* 6 */,
-/* 7 */
->>>>>>> master
+/***/ 6:
 /***/ function(module, exports) {
 
 	/*** IMPORTS FROM imports-loader ***/
@@ -94,29 +85,36 @@
 
 
 /***/ },
-/* 8 */,
-/* 9 */,
-/* 10 */
+
+/***/ 11:
+/***/ function(module, exports) {
+
+	module.exports = "<footer id=\"footer\">	<ul>		<li data-url=\'/build/index.html\'>			<i class=\"iconfont\">&#xe60e;</i>			<b>首页</b>		</li>		<li data-url=\'/build/index-class.html\'>			<i class=\"iconfont\">&#xe647;</i>			<b>分类</b>		</li>		<li data-url=\'\'>			<i class=\"iconfont\">&#xe638;</i>			<b>消息</b>		</li>		<li data-url=\'/build/index-car.html\'>			<i class=\"iconfont\">&#xe764;</i>			<b>购物车</b>		</li>		<li data-url=\'/build/index-person.html\'>			<i class=\"iconfont\">&#xe655;</i>			<b>个人中心</b>		</li>	</ul></footer>"
+
+/***/ },
+
+/***/ 20:
 /***/ function(module, exports, __webpack_require__) {
 
 	/*** IMPORTS FROM imports-loader ***/
 	var define = false;
 
-	__webpack_require__(11);
+	__webpack_require__(21);
 
 
 
 /***/ },
-/* 11 */
+
+/***/ 21:
 /***/ function(module, exports, __webpack_require__) {
 
 	/*** IMPORTS FROM imports-loader ***/
 	var define = false;
 
-	var str = __webpack_require__(12);
-	var footer = __webpack_require__(13);
+	var str = __webpack_require__(22);
+	var footer = __webpack_require__(11);
 
-	var common = __webpack_require__(7);
+	var common = __webpack_require__(6);
 
 	common.renderBody($('body'),str);
 	common.append($('.container'),footer);
@@ -125,16 +123,12 @@
 
 
 /***/ },
-/* 12 */
+
+/***/ 22:
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"container\">	<header id=\"detali-header\">			</header>	<div class=\"swiper-container\">		<div class=\"swiper-wrapper\">			<div class=\"swiper-slide\">				<img src=\"../../../images/sai1.jpg\"/>			</div>			<div class=\"swiper-slide\">				<img src=\"../../../images/sai2.jpg\"/>			</div>			<div class=\"swiper-slide\">				<img src=\"../../../images/sai3.jpg\"/>			</div>			<div class=\"swiper-slide\">				<img src=\"../../../images/sai4.jpg\"/>			</div>			<div class=\"swiper-slide\">				<img src=\"../../../images/sai5.jpg\"/>			</div>		</div>		<div class=\"swiper-pagination-h\"></div>	</div>	<section>			</section>	</div>"
 
-/***/ },
-/* 13 */
-/***/ function(module, exports) {
-
-	module.exports = "<footer id=\"footer\">	<ul>		<li data-url=\'/build/index.html\'>			<i class=\"iconfont\">&#xe60e;</i>			<b>首页</b>		</li>		<li data-url=\'/build/index-class.html\'>			<i class=\"iconfont\">&#xe647;</i>			<b>分类</b>		</li>		<li data-url=\'\'>			<i class=\"iconfont\">&#xe638;</i>			<b>消息</b>		</li>		<li data-url=\'/build/index-car.html\'>			<i class=\"iconfont\">&#xe764;</i>			<b>购物车</b>		</li>		<li data-url=\'/build/index-person.html\'>			<i class=\"iconfont\">&#xe655;</i>			<b>个人中心</b>		</li>	</ul></footer>"
-
 /***/ }
-/******/ ]);
+
+/******/ });
