@@ -45,16 +45,19 @@
 /***/ function(module, exports, __webpack_require__) {
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	module.exports = __webpack_require__(10);
 =======
 	module.exports = __webpack_require__(17);
 >>>>>>> fengyuchao
+=======
+	module.exports = __webpack_require__(10);
+>>>>>>> wuhuizhang
 
 
 /***/ },
 /* 1 */,
 /* 2 */,
-<<<<<<< HEAD
 /* 3 */
 /***/ function(module, exports) {
 
@@ -77,11 +80,16 @@
 	    })
 	//<<<<<<< HEAD
 	//=======
+<<<<<<< HEAD
 	//<<<<<<< HEAD
+=======
+	// <<<<<<< HEAD
+>>>>>>> wuhuizhang
 	},
 	setHeader:function($el,str){
 		$el.html(str);
 	//>>>>>>> fengyuchao
+<<<<<<< HEAD
 	//<<<<<<< HEAD
 	//}
 	//=======
@@ -92,13 +100,30 @@
 	//}
 	//>>>>>>> master
 	//=======
+=======
+	},
+	// =======
+
+	  setHeader:function($el,str){
+	  	$el.html(str);
+	//>>>>>>> fengyuchao
+	  },
+	// >>>>>>> master
+	switchPage: function (index) {
+	  // $('#footer li').eq(index).addClass('active').siblings().removeClass('active');
+	  $('#footer').on('click', 'li', function () {
+	    location.href = $(this).attr('data-url');
+	  })
+>>>>>>> wuhuizhang
 	}
 
 	//>>>>>>> songxuejiao
 	};
 	//
+
 	module.exports = common;
 	//console.log(2)
+
 
 
 /***/ },
@@ -121,6 +146,7 @@
 /***/ },
 /* 11 */
 /***/ function(module, exports, __webpack_require__) {
+<<<<<<< HEAD
 =======
 /* 3 */,
 /* 4 */,
@@ -128,6 +154,8 @@
 /* 6 */
 /***/ function(module, exports) {
 >>>>>>> fengyuchao
+=======
+>>>>>>> wuhuizhang
 
 	/*** IMPORTS FROM imports-loader ***/
 	var define = false;
@@ -145,6 +173,7 @@
 
 
 /***/ },
+<<<<<<< HEAD
 <<<<<<< HEAD
 /* 12 */
 =======
@@ -283,6 +312,15 @@
 =======
 /* 19 */
 >>>>>>> fengyuchao
+=======
+/* 12 */
+/***/ function(module, exports) {
+
+	module.exports = "<header id=\"header\">	<div id=\"header-wrap\">		<span id=\"header-left\">左边</span>		<div id=\"header-title\">标题</div>		<span id=\"header-right\">右边</span>	</div></header>"
+
+/***/ },
+/* 13 */
+>>>>>>> wuhuizhang
 /***/ function(module, exports) {
 
 	module.exports = "<div id=\"container\">	<ul>		<li>			<span>手机号</span>			<div class=\"inputbox\">				<input type=\"text\" placeholder=\"请输入手机号码\" id=\"phonenumber\"/>				<span id=\"phoneInfo\" class=\"iconfont\">&#xe6a0;</span>			</div>					</li>		<li>			<span>动态码</span>			<div class=\"inputbox\">				<input type=\"text\" placeholder=\"请输入验证码\" id=\"code\"/>				<a href=\"#\">短信获取</a>				<span id=\"codeInfo\" class=\"iconfont\">&#xe6a0;</span>			</div>			</li>		<li>			<span>密码</span>			<div class=\"inputbox\">				<input type=\"password\" placeholder=\"请输入密码\" id=\"password\"/>				<span id=\"passInfo\" class=\"iconfont\">&#xe6a0;</span>			</div>					</li>		<input type=\"checkbox\" name=\"\" id=\"showBtn\" value=\"\" />显示密码		<input type=\"button\" value=\"注册\"  id=\"regBtn\"/>	</ul></div>"

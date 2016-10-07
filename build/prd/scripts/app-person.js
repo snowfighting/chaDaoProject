@@ -46,12 +46,16 @@
 /***/ function(module, exports, __webpack_require__) {
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> wuhuizhang
 	module.exports = __webpack_require__(9);
 
 
 /***/ },
 
 /***/ 9:
+<<<<<<< HEAD
 =======
 	module.exports = __webpack_require__(14);
 
@@ -103,6 +107,8 @@
 /* 9 */,
 /* 10 */,
 /* 11 */
+=======
+>>>>>>> wuhuizhang
 /***/ function(module, exports) {
 
 	module.exports = "<footer id=\"footer\">	<ul>		<li data-url=\'/build/index.html\'>			<i class=\"iconfont\">&#xe60e;</i>			<b>首页</b>		</li>		<li data-url=\'/build/index-class.html\'>			<i class=\"iconfont\">&#xe647;</i>			<b>分类</b>		</li>		<li data-url=\'\'>			<i class=\"iconfont\">&#xe638;</i>			<b>消息</b>		</li>		<li data-url=\'/build/index-car.html\'>			<i class=\"iconfont\">&#xe764;</i>			<b>购物车</b>		</li>		<li data-url=\'/build/index-person.html\'>			<i class=\"iconfont\">&#xe655;</i>			<b>个人中心</b>		</li>	</ul></footer>"
