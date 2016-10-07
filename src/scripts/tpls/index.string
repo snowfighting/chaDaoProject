@@ -1,0 +1,212 @@
+<div class="container">
+	<div class="header" id="header">
+		<div class="header_left"></div>
+		<div class="header_search">
+			<a href="#">
+				<i></i>
+				<span class="search_input">
+					请输入关键词
+				</span>
+			</a>
+		</div>
+		<div class="header_message">
+			<i></i>
+		</div>
+	</div>
+	<div class="box1" id="index-scroll">
+		<div class="box2">
+			<header>
+				<ul>
+					<li><a href="../../../index-class.html"><img src="../../../images/categroy.png" alt="" /></a></li>
+					<li data-url="/build/index.html">茶到店</li>
+					<li data-url="/build/index-car.html"><a href="#"><img src="../../../images/cart_w.png" alt="" /></a></li>
+
+				</ul>
+			</header>
+			<section>
+
+				<div class="swiper-container swiper-container-horizontal loop">
+					<ul class="swiper-wrapper">
+						<li class="swiper-slide"><a href="www.baidu.com"><img src="../../../images/loop1.jpg"/></a></li>
+						<li class="swiper-slide"><img src="../../../images/loop2.jpg"/></li>
+						<li class="swiper-slide"><img src="../../../images/loop3.jpg"/></li>
+						<li class="swiper-slide"><img src="../../../images/loop4.jpg"/></li>
+					</ul>
+					<div class="header-warp">
+						<a href="#">
+							<i></i>
+							<span>请输入关键词</span>
+						</a>
+					</div>
+					<div class="header-m">
+						<a href="#">
+							<i class="iconfont">&#xe638;</i>
+							<p>消息</p>
+						</a>
+					</div>
+				</div>
+				<div class="nav">
+					<ul class="nav-list">
+						<li><a href="#"><i></i><p>分类</p></a></li>
+						<li><a href="#"><i></i><p>购物车</p></a></li>
+						<li><a href="#"><i></i><p>我的账号</p></a></li>
+						<li><a href="#"><i></i><p>每日签到</p></a></li>
+					</ul>
+				</div>
+				<div class="zhekou">
+					<div class="zhekou_biaoti">
+						限时折扣
+					</div>
+					<ul class="zhekou_list">
+						<li>
+							<i>打折</i>
+							<a href="#">
+								<img src="../../../images/tu_2.jpg" alt="" />
+								<dl>
+									<dt>八马茶业 安溪铁观音 赛珍珠1000  250克</dt>
+									<dd>￥600.00</dd>
+								</dl>
+							</a>
+						</li>
+						<li>
+							<i>打折</i>
+							<a href="#">
+								<img src="../../../images/tu_1.jpg" alt="" />
+								<dl>
+									<dt>八马茶业 龙井3000  250克</dt>
+									<dd>￥1500.00</dd>
+								</dl>
+							</a>
+						</li>
+					</ul>
+
+				</div>
+				<div class="tuijian">
+					<div class="tuijian_biaoti">
+						为您推荐
+					</div>
+					<div class="list">
+						<ul class="good_list">
+							<li>
+								<span>
+									<a href="#">
+										<img src="../../../images/tu_3.jpg" alt="" />
+									</a>
+								</span>
+								<dl>
+									<dt>
+										<a href="#">
+											八马茶业 八马安溪铁观音·小清新1号 252克
+										</a>
+									</dt>
+									<dd class="list_pinpai"><span>品牌:八马茶业</span>&nbsp;&nbsp;&nbsp;<span>销量:506</span></dd>
+									<dd class="list_price"><i>￥150.00</i></dd>
+								</dl>
+							</li>
+							<li>
+								<span>
+									<a href="#">
+										<img src="../../../images/tu_3.jpg" alt="" />
+									</a>
+								</span>
+								<dl>
+									<dt>
+										<a href="#">
+											八马茶业 八马安溪铁观音·小清新1号 252克
+										</a>
+									</dt>
+									<dd class="list_pinpai"><span>品牌:八马茶业</span>&nbsp;&nbsp;&nbsp;<span>销量:506</span></dd>
+									<dd class="list_price"><i>￥150.00</i></dd>
+								</dl>
+							</li>
+							<li>
+								<span>
+									<a href="#">
+										<img src="../../../images/tu_3.jpg" alt="" />
+									</a>
+								</span>
+								<dl>
+									<dt>
+										<a href="#">
+											八马茶业 八马安溪铁观音·小清新1号 252克
+										</a>
+									</dt>
+									<dd class="list_pinpai"><span>品牌:八马茶业</span>&nbsp;&nbsp;&nbsp;<span>销量:506</span></dd>
+									<dd class="list_price"><i>￥150.00</i></dd>
+								</dl>
+							</li>
+							<li>
+								<span>
+									<a href="#">
+										<img src="../../../images/tu_3.jpg" alt="" />
+									</a>
+								</span>
+								<dl>
+									<dt>
+										<a href="#">
+											八马茶业 八马安溪铁观音·小清新1号 252克
+										</a>
+									</dt>
+									<dd class="list_pinpai"><span>品牌:八马茶业</span>&nbsp;&nbsp;&nbsp;<span>销量:506</span></dd>
+									<dd class="list_price"><i>￥150.00</i></dd>
+								</dl>
+							</li>
+							<li>
+								<span>
+									<a href="#">
+										<img src="../../../images/tu_3.jpg" alt="" />
+									</a>
+								</span>
+								<dl>
+									<dt>
+										<a href="#">
+											八马茶业 八马安溪铁观音·小清新1号 252克
+										</a>
+									</dt>
+									<dd class="list_pinpai"><span>品牌:八马茶业</span>&nbsp;&nbsp;&nbsp;<span>销量:506</span></dd>
+									<dd class="list_price"><i>￥150.00</i></dd>
+								</dl>
+							</li>
+							<li>
+								<span>
+									<a href="#">
+										<img src="../../../images/tu_3.jpg" alt="" />
+									</a>
+								</span>
+								<dl>
+									<dt>
+										<a href="#">
+											八马茶业 八马安溪铁观音·小清新1号 252克
+										</a>
+									</dt>
+									<dd class="list_pinpai"><span>品牌:八马茶业</span>&nbsp;&nbsp;&nbsp;<span>销量:506</span></dd>
+									<dd class="list_price"><i>￥150.00</i></dd>
+								</dl>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="bottom">
+					<div class="bottom_top">
+						<ul class="bottom_list">
+							<li><a href="#">我的账号</a></li>
+							<li><a href="#">安全退出</a></li>
+							<li><a href="#">反馈</a></li>
+							<li><a href="#">返回顶部</a></li>
+						</ul>
+					</div>
+					<div class="bottom_banben">
+						<ul class="bottom_ban">
+							<li><a href="#"><span></span><p>客户端</p></a></li>
+							<li><a href="#"><span></span><p>触屏版</p></a></li>
+							<li><a href="#"><span></span><p>电脑版</p></a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+	<div class="back">
+		<i></i>
+	</div>
+</div>
