@@ -8,26 +8,19 @@ inner: function ($el, str) {
 append: function ($el, str) {
     $el.append(str);
 },
-
 switchPage: function (index) {
     $('#footer').on('tap', 'li', function () {
       location.href = $(this).attr('data-url');
     })
 //<<<<<<< HEAD
 //=======
-<<<<<<< HEAD
+//<<<<<<< HEAD
 },
 setHeader:function($el,str){
 	$el.html(str);
 //>>>>>>> fengyuchao
 }
-=======
-  },
-  setHeader:function($el,str){
-  	$el.html(str);
-//>>>>>>> fengyuchao
-  }
->>>>>>> master
+
 };
 //
 module.exports = common;
