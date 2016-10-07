@@ -1,6 +1,55 @@
-
 body{
     @extend %header;
+    background: #F5F5F5;
+    #container{
+        width: 100%;
+      ul{
+          li{
+              @include flexbox();
+              height: 0.42rem;
+              width: 100%;
+              background: #fff;
+              border-bottom: 0.5px solid #f4f4f4;
+              span{
+                  @include flex(2);
+                  text-align: center;
+                  line-height: 0.42rem;
+              }
+              .inputbox{
+                  height: 100%;
+                  border: 0;
+                  @include flex(8);
+                  @include flexbox();
+                  input{
+                      border: 0;
+                      height: 100%;
+                      @include flex(6.5); 
+                    
+                  }
+                  span{
+                      @include flex(1);
+                      visibility: hidden; 
+                  }
+                  a{
+                      @include flex(2); 
+                       color: #3BAEDA;
+                       line-height: 0.42rem;
+                  }
+              }
+          }
+      }
+      #showBtn{
+          margin: 0.25rem 0 0.2rem 0.4rem;
+      } 
+      #regBtn{
+          height: 0.4rem;
+          background: #EEE;
+          border: 0;
+          width: 90%;
+          margin: 0 5% 0 5%;
+          
+      } 
+    }
 }
 
 

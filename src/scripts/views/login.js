@@ -1,11 +1,11 @@
 var common = require('../utils/common.util.js');
 
 var header=require('../tpls/header.string');
-var body=require('../tpls/register.string');
+var body=require('../tpls/login.string');
 
 common.renderBody($('body'),header);
 common.append($('body'),body);
-common.setHeader($('#header-title'),"注册");
+common.setHeader($('#header-title'),"登陆");
 common.setHeader($('#header-left'),"&#xf007a");
 common.setHeader($('#header-right'),"&#xf0013");
 
@@ -16,10 +16,6 @@ window.onload=function(){
 		$("#phoneInfo").css("visibility","visible");
 	});
 	
-	$("#code").on("focus",function(){
-		$("#codeInfo").css("visibility","visible");
-	});
-	
 	$("#password").on("focus",function(){
 		$("#passInfo").css("visibility","visible");
 	});
@@ -28,9 +24,7 @@ window.onload=function(){
 	$("#phoneInfo").on("touchend",function(){
 		$("#phonenumber").val("");
 	});
-	$("#codeInfo").on("touchend",function(){
-		$("#code").val("");
-	});
+	
 	$("#passInfo").on("touchend",function(){
 		$("#password").val("");
 	});
@@ -46,10 +40,6 @@ window.onload=function(){
 		}
 	});
 	
-	$("#code").on("blur",function(){
-		
-	});
-	
 	$("#password").on("blur",function(){
 		var reg=/[a-zA-Z]{1}[a-zA-Z0-9]{5,11}/;
 		console.log(reg.test($(this).val().trim()));
@@ -60,34 +50,39 @@ window.onload=function(){
 			$("#passInfo").css("color","red");
 		}
 	});
+
 	
-	//设置是否显示密码
-	var isshowpass=false;
-	$("#showBtn").on("touchend",function(){
-		console.log(1);
-		if($(this).prop("checked")){
-			console.log(2);
-			isshowpass=true;
-			$("#password").prop("type","password");
+	//设置注册按钮的点击事件
+	$("#loginBtn").on("touchend",function(){
+		var phonenumber=$("#phonenumber").val().trim();
+		var password=$("#password").val().trim();
+		if($("#remBtn").prop("checked")){
+			saveLoginInfoToCookie(phonenumber,password);
+		}
+		
+		var user=JSON.parse(localStorage.getItem("user"));
+		if(user.username==phonenumber&&user.password==password){
+			window.location.href="index-person.html?username="+phonenumber;
 		}else{
-			console.log(3);
-			isshowpass=false;
-			$("#password").prop("type","text");
+			$("#errorInfo").css("visibility","visible");
+			setTimeout(function(){
+				$("#errorInfo").css("visibility","hidden");
+			},2000);
 		}
 		
 	});
 	
-	//设置注册按钮的点击事件
-	$("#regBtn").on("touchend",function(){
-		var phonenumber=$("#phonenumber").val().trim();
-		var password=$("#password").val().trim();
-		console.log(phonenumber);
-		var user={
-			"username":phonenumber,
-			"password":password
-		}
-		localStorage.setItem("user",JSON.stringify(user));
-		window.location.href="login.html";
-	});
+	//登录时点击“记住密码”，则将登录信息保存到cookie中
+    function saveLoginInfoToCookie(username,password){
+        var user={
+            "username":username,
+            "password":password
+        }
+        var date=new Date();
+        date.setDate(date.getDate()+7);
+        var strUser=JSON.stringify(user);
+        document.cookie="userInfo="+strUser+";repires="+date;
+
+    }
 	
 }
