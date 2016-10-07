@@ -139,10 +139,9 @@
 		console.log(mUrl);
 		$("#username").text(paramValue);
 		
-	//	$(".container").on("touchmove",function(event){
-	//		var touch = event.touches[0];
-	//		console.log(touch.pageY);
-	//	});
+		$(".container").on("touchmove",function(event){
+			var touch = event.touches[0];
+		});
 	}
 
 
