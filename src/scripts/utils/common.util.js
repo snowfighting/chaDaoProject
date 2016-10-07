@@ -15,11 +15,19 @@ switchPage: function (index) {
     })
 //<<<<<<< HEAD
 //=======
+<<<<<<< HEAD
 },
 setHeader:function($el,str){
 	$el.html(str);
 //>>>>>>> fengyuchao
 }
+=======
+  },
+  setHeader:function($el,str){
+  	$el.html(str);
+//>>>>>>> fengyuchao
+  }
+>>>>>>> master
 };
 //
 module.exports = common;

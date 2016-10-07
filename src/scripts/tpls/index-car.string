@@ -1,0 +1,28 @@
+<div class="car-container">
+	<header>
+		<div class="header-l">
+			<a href="javascript:history.go(-1)"></a>
+		</div>
+		<div class="header-title">
+			<h1>购物车</h1>
+		</div>
+		<div class="header-r">
+			<a href="javascript:void(0);"></a>
+		</div>
+	</header>
+	<section>
+		
+	</section>
+	<footer>
+		<div class="all-check">
+			<input type="checkbox" id="all_checkbox" class="all_checkbox" checked value="" />
+			<!--::after-->
+		</div>
+		<div class="total">
+			
+		</div>
+		<div class="check-out">
+			
+		</div>
+	</footer>
+</div>
