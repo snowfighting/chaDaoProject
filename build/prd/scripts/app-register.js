@@ -44,21 +44,86 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
+<<<<<<< HEAD
 	module.exports = __webpack_require__(17);
+=======
+	module.exports = __webpack_require__(8);
+>>>>>>> master
 
 
 /***/ },
 /* 1 */,
 /* 2 */,
-/* 3 */,
-/* 4 */,
-/* 5 */,
-/* 6 */
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+/* 3 */
 /***/ function(module, exports) {
 
 	/*** IMPORTS FROM imports-loader ***/
 	var define = false;
 
+	var common = {
+	renderBody: function ($el, str) {
+	    $el.prepend(str);
+	},
+	inner: function ($el, str) {
+	    $el.html(str);
+	},
+	append: function ($el, str) {
+	    $el.append(str);
+	},
+
+	switchPage: function (index) {
+	    $('#footer').on('tap', 'li', function () {
+	      location.href = $(this).attr('data-url');
+	    })
+	//<<<<<<< HEAD
+	//=======
+	},
+	setHeader:function($el,str){
+		$el.html(str);
+	//>>>>>>> fengyuchao
+	}
+	};
+	//
+	module.exports = common;
+	//console.log(2)
+
+
+/***/ },
+/* 4 */,
+/* 5 */,
+/* 6 */,
+/* 7 */,
+/* 8 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/*** IMPORTS FROM imports-loader ***/
+	var define = false;
+
+	__webpack_require__(9);
+
+
+
+/***/ },
+/* 9 */
+/***/ function(module, exports, __webpack_require__) {
+=======
+>>>>>>> master
+/* 3 */,
+/* 4 */,
+/* 5 */,
+/* 6 */
+/***/ function(module, exports) {
+>>>>>>> master
+
+	/*** IMPORTS FROM imports-loader ***/
+	var define = false;
+
+<<<<<<< HEAD
+	var common = __webpack_require__(3);
+=======
 	var common = {
 	  renderBody: function ($el, str) {
 	    $el.prepend(str);
@@ -82,13 +147,58 @@
 	//>>>>>>> fengyuchao
 	  }
 	};
+>>>>>>> master
 
-	module.exports = common;
+	var header=__webpack_require__(10);
+	var body=__webpack_require__(11);
+
+	common.renderBody($('body'),header);
+	common.append($('body'),body);
+	common.setHeader($('#header-title'),"注册");
+	common.setHeader($('#header-left'),"左");
+	common.setHeader($('#header-right'),"右");
+
+
+/***/ },
+<<<<<<< HEAD
+/* 7 */
+=======
+<<<<<<< HEAD
+=======
+/* 7 */,
+/* 8 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/*** IMPORTS FROM imports-loader ***/
+	var define = false;
+
+	__webpack_require__(9);
 
 
 
 /***/ },
-/* 7 */
+/* 9 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/*** IMPORTS FROM imports-loader ***/
+	var define = false;
+
+	var common = __webpack_require__(6);
+
+	var header=__webpack_require__(10);
+	var body=__webpack_require__(11);
+
+	common.renderBody($('body'),header);
+	common.append($('body'),body);
+	common.setHeader($('#header-title'),"注册");
+	common.setHeader($('#header-left'),"左");
+	common.setHeader($('#header-right'),"右");
+
+
+/***/ },
+>>>>>>> master
+/* 10 */
+>>>>>>> master
 /***/ function(module, exports) {
 
 	module.exports = "<header id=\"header\">	<div id=\"header-wrap\">		<span class=\"iconfont\" id=\"header-left\">左边</span>		<div id=\"header-title\">标题</div>		<span class=\"iconfont\" id=\"header-right\">右边</span>	</div></header>"
@@ -217,7 +327,11 @@
 
 
 /***/ },
+<<<<<<< HEAD
 /* 19 */
+=======
+/* 11 */
+>>>>>>> master
 /***/ function(module, exports) {
 
 	module.exports = "<div id=\"container\">	<ul>		<li>			<span>手机号</span>			<div class=\"inputbox\">				<input type=\"text\" placeholder=\"请输入手机号码\" id=\"phonenumber\"/>				<span id=\"phoneInfo\" class=\"iconfont\">&#xe6a0;</span>			</div>					</li>		<li>			<span>动态码</span>			<div class=\"inputbox\">				<input type=\"text\" placeholder=\"请输入验证码\" id=\"code\"/>				<a href=\"#\">短信获取</a>				<span id=\"codeInfo\" class=\"iconfont\">&#xe6a0;</span>			</div>			</li>		<li>			<span>密码</span>			<div class=\"inputbox\">				<input type=\"password\" placeholder=\"请输入密码\" id=\"password\"/>				<span id=\"passInfo\" class=\"iconfont\">&#xe6a0;</span>			</div>					</li>		<input type=\"checkbox\" name=\"\" id=\"showBtn\" value=\"\" />显示密码		<input type=\"button\" value=\"注册\"  id=\"regBtn\"/>	</ul></div>"

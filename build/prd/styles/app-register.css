@@ -649,6 +649,7 @@ a {
   -moz-osx-font-smoothing: grayscale;
   vertical-align: middle; }
 
+<<<<<<< HEAD
 [type=tpl] {
   display: none; }
 
@@ -679,6 +680,11 @@ a {
 @font-face {
   font-family: 'iconfont';
   src: url("/build/images/iconfont/iconfont_sxj.woff") format("woff"), url("/build/images/iconfont/iconfont_sxj.ttf") format("truetype"); }
+=======
+@font-face {
+  font-family: 'iconfont';
+  src: url("iconfont.woff") format("woff"), url("iconfont.ttf") format("truetype"); }
+>>>>>>> master
 
 .iconfont {
   font-family: iconfont; }

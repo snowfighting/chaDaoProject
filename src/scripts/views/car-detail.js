@@ -1,8 +1,18 @@
 var str = require('../tpls/car-details.string');
-var footer = require('../tpls/footer.string');
 
 var common = require('../utils/common.util.js');
 
 common.renderBody($('body'),str);
-common.append($('.container'),footer);
 
+var mySwiper = new Swiper('.swiper-container',{
+	pagination:'.swiper-pagination',
+	paginationClickable:true,
+	
+});
+
+window.onload = function(){
+	var myScroll = new IScroll('#detail-scroll',{
+//		mouseWheel:true,
+//		scrollbars:true
+	});
+}
