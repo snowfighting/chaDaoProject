@@ -15,20 +15,27 @@ switchPage: function (index) {
     })
 //<<<<<<< HEAD
 //=======
-<<<<<<< HEAD
+// <<<<<<< HEAD
 },
 setHeader:function($el,str){
 	$el.html(str);
 //>>>>>>> fengyuchao
-}
-=======
-  },
+},
+// =======
+
   setHeader:function($el,str){
   	$el.html(str);
 //>>>>>>> fengyuchao
-  }
->>>>>>> master
+  },
+// >>>>>>> master
+switchPage: function (index) {
+  // $('#footer li').eq(index).addClass('active').siblings().removeClass('active');
+  $('#footer').on('click', 'li', function () {
+    location.href = $(this).attr('data-url');
+  })
+}
 };
 //
+
 module.exports = common;
 //console.log(2)

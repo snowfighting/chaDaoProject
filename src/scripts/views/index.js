@@ -3,6 +3,7 @@ var str = require('../tpls/index.string');
 var footer=require('../tpls/footer.string');
 common.renderBody($('body'),str);
 common.append($('.container'),footer);
+common.switchPage(0);
 var mySwiper = new Swiper('.swiper-container',{
 	loop : true,
 autoplay : 2000
@@ -13,7 +14,7 @@ window.onload = function(){
 		click:true,
 					scrollbars: true,
 				 	mouseWheel: true,
-				 probeType:3
+				 	probeType:3
 
 });
 myScroll.on('scroll',function(){
