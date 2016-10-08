@@ -1,0 +1,28 @@
+<div id="container">
+	<div id="errorInfo">
+		您输入的用户名或者密码有误
+	</div>
+	<ul>
+		<li>
+			<span>手机号</span>
+			<div class="inputbox">
+				<input type="text" placeholder="请输入手机号码" id="phonenumber"/>
+				<span id="phoneInfo" class="iconfont">&#xe6a0;</span>
+			</div>
+			
+		</li>
+		<li>
+			<span>密码</span>
+			<div class="inputbox">
+				<input type="password" placeholder="请输入密码" id="password"/>
+				<span id="passInfo" class="iconfont">&#xe6a0;</span>
+			</div>
+			
+		</li>
+		<div id="loginsetting">
+			<p><input type="checkbox" name="" id="remBtn" value="" />7天自动登陆</p>
+			<a href="#">忘记密码？</a>
+		</div>
+		<input type="button" value="登&nbsp;&nbsp;陆"  id="loginBtn"/>
+	</ul>
+</div>

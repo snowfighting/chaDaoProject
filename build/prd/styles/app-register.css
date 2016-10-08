@@ -649,9 +649,42 @@ a {
   -moz-osx-font-smoothing: grayscale;
   vertical-align: middle; }
 
+<<<<<<< HEAD
 @font-face {
   font-family: 'iconfont';
   src: url("iconfont.woff") format("woff"), url("iconfont.ttf") format("truetype"); }
+=======
+[type=tpl] {
+  display: none; }
+
+@font-face {
+  font-family: 'iconfont';
+  src: url("/build/images/iconfont/iconfont_fyc.woff") format("woff"), url("/build/images/iconfont/iconfont_fyc.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'iconfont';
+  src: url("/build/images/iconfont/iconfont_fyc2.woff") format("woff"), url("/build/images/iconfont/iconfont_fyc2.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'iconfont';
+  src: url("/build/images/iconfont/iconfont_fyc3.woff") format("woff"), url("/build/images/iconfont/iconfont_fyc3.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'iconfont';
+  src: url("/build/images/iconfont/iconfont_fyc4.woff") format("woff"), url("/build/images/iconfont/iconfont_fyc4.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'iconfont';
+  src: url("/build/images/iconfont/iconfont_fyc5.woff") format("woff"), url("/build/images/iconfont/iconfont_fyc5.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'iconfont';
+  src: url("/build/images/iconfont/iconfont_fyc6.woff") format("woff"), url("/build/images/iconfont/iconfont_fyc6.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'iconfont';
+  src: url("/build/images/iconfont/iconfont_sxj.woff") format("woff"), url("/build/images/iconfont/iconfont_sxj.ttf") format("truetype"); }
+>>>>>>> fengyuchao
 
 .iconfont {
   font-family: iconfont; }
@@ -663,7 +696,8 @@ body #header #header-wrap {
   display: -webkit-flex;
   display: flex;
   text-align: center;
-  line-height: 0.44rem; }
+  line-height: 0.44rem;
+  border-bottom: 0.5px solid #f4f4f4; }
   body #header #header-wrap #header-left {
     width: 0.44rem;
     font-size: 0.16rem; }
@@ -677,3 +711,61 @@ body #header #header-wrap {
   body #header #header-wrap #header-right {
     width: 0.44rem;
     font-size: 0.16rem; }
+
+body {
+  background: #F5F5F5; }
+  body #container {
+    width: 100%; }
+    body #container ul li {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      height: 0.42rem;
+      width: 100%;
+      background: #fff;
+      border-bottom: 0.5px solid #f4f4f4; }
+      body #container ul li span {
+        -webkit-box-flex: 2;
+        -webkit-flex: 2;
+        flex: 2;
+        width: .1px;
+        text-align: center;
+        line-height: 0.42rem; }
+      body #container ul li .inputbox {
+        height: 100%;
+        border: 0;
+        -webkit-box-flex: 8;
+        -webkit-flex: 8;
+        flex: 8;
+        width: .1px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex; }
+        body #container ul li .inputbox input {
+          border: 0;
+          height: 100%;
+          -webkit-box-flex: 6.5;
+          -webkit-flex: 6.5;
+          flex: 6.5;
+          width: .1px; }
+        body #container ul li .inputbox span {
+          -webkit-box-flex: 1;
+          -webkit-flex: 1;
+          flex: 1;
+          width: .1px;
+          visibility: hidden; }
+        body #container ul li .inputbox a {
+          -webkit-box-flex: 2;
+          -webkit-flex: 2;
+          flex: 2;
+          width: .1px;
+          color: #3BAEDA;
+          line-height: 0.42rem; }
+    body #container #showBtn {
+      margin: 0.25rem 0 0.2rem 0.4rem; }
+    body #container #regBtn {
+      height: 0.4rem;
+      background: #EEE;
+      border: 0;
+      width: 90%;
+      margin: 0 5% 0 5%; }
