@@ -67,7 +67,7 @@
 	    $el.append(str);
 	},
 	switchPage: function (index) {
-	    $('#footer').on('tap', 'li', function () {
+	    $('#footer').on('click', 'li', function () {
 	      location.href = $(this).attr('data-url');
 	    })
 	//<<<<<<< HEAD
@@ -101,7 +101,7 @@
 /* 5 */
 /***/ function(module, exports) {
 
-	module.exports = "<footer id=\"footer\">	<ul>		<li data-url=\'/build/index.html\'>			<i class=\"iconfont\">&#xe60e;</i>			<b>首页</b>		</li>		<li data-url=\'/build/index-class.html\'>			<i class=\"iconfont\">&#xe647;</i>			<b>分类</b>		</li>		<li data-url=\'\'>			<i class=\"iconfont\">&#xe638;</i>			<b>消息</b>		</li>		<li data-url=\'/build/index-car.html\'>			<i class=\"iconfont\">&#xe764;</i>			<b>购物车</b>		</li>		<li data-url=\'/build/index-person.html\'>			<i class=\"iconfont\">&#xe655;</i>			<b>个人中心</b>		</li>	</ul></footer>"
+	module.exports = "<footer id=\"footer\">	<ul>		<li data-url=\'../../../index.html\'>			<i class=\"iconfont\">&#xe60e;</i>			<b>首页</b>		</li>		<li data-url=\'../../../index-class.html\'>			<i class=\"iconfont\">&#xe647;</i>			<b>分类</b>		</li>		<li data-url=\'\'>			<i class=\"iconfont\">&#xe638;</i>			<b>消息</b>		</li>		<li data-url=\'../../../index-car.html\'>			<i class=\"iconfont\">&#xe764;</i>			<b>购物车</b>		</li>		<li data-url=\'../../../index-person.html\'>			<i class=\"iconfont\">&#xe655;</i>			<b>个人中心</b>		</li>	</ul></footer>"
 
 /***/ },
 /* 6 */,
@@ -142,6 +142,7 @@
 
 	common.renderBody($('body'),body);
 	common.append($('.container'),footer);
+	common.switchPage(3);
 
 	window.onload=function(){
 		$(".orders-title").on("click",function(){
@@ -157,6 +158,8 @@
 		$(".container").on("touchmove",function(event){
 			var touch = event.touches[0];
 		});
+		
+		
 	}
 
 

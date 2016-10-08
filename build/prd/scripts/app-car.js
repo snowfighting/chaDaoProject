@@ -67,7 +67,7 @@
 	    $el.append(str);
 	},
 	switchPage: function (index) {
-	    $('#footer').on('tap', 'li', function () {
+	    $('#footer').on('click', 'li', function () {
 	      location.href = $(this).attr('data-url');
 	    })
 	//<<<<<<< HEAD

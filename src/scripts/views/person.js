@@ -6,6 +6,7 @@ var body=require('../tpls/person.string');
 
 common.renderBody($('body'),body);
 common.append($('.container'),footer);
+common.switchPage(3);
 
 window.onload=function(){
 	$(".orders-title").on("click",function(){
@@ -21,5 +22,7 @@ window.onload=function(){
 	$(".container").on("touchmove",function(event){
 		var touch = event.touches[0];
 	});
+	
+	
 }
 
