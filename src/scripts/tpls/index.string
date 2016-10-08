@@ -86,104 +86,7 @@
 						为您推荐
 					</div>
 					<div class="list">
-						<!--<ul class="good_list">
-							<li>
-								<span>
-									<a href="#">
-										<img src="../../../images/tu_3.jpg" alt="" />
-									</a>
-								</span>
-								<dl>
-									<dt>
-										<a href="#">
-											八马茶业 八马安溪铁观音·小清新1号 252克
-										</a>
-									</dt>
-									<dd class="list_pinpai"><span>品牌:八马茶业</span>&nbsp;&nbsp;&nbsp;<span>销量:506</span></dd>
-									<dd class="list_price"><i>￥150.00</i></dd>
-								</dl>
-							</li>
-							<li>
-								<span>
-									<a href="#">
-										<img src="../../../images/tu_3.jpg" alt="" />
-									</a>
-								</span>
-								<dl>
-									<dt>
-										<a href="#">
-											八马茶业 八马安溪铁观音·小清新1号 252克
-										</a>
-									</dt>
-									<dd class="list_pinpai"><span>品牌:八马茶业</span>&nbsp;&nbsp;&nbsp;<span>销量:506</span></dd>
-									<dd class="list_price"><i>￥150.00</i></dd>
-								</dl>
-							</li>
-							<li>
-								<span>
-									<a href="#">
-										<img src="../../../images/tu_3.jpg" alt="" />
-									</a>
-								</span>
-								<dl>
-									<dt>
-										<a href="#">
-											八马茶业 八马安溪铁观音·小清新1号 252克
-										</a>
-									</dt>
-									<dd class="list_pinpai"><span>品牌:八马茶业</span>&nbsp;&nbsp;&nbsp;<span>销量:506</span></dd>
-									<dd class="list_price"><i>￥150.00</i></dd>
-								</dl>
-							</li>
-							<li>
-								<span>
-									<a href="#">
-										<img src="../../../images/tu_3.jpg" alt="" />
-									</a>
-								</span>
-								<dl>
-									<dt>
-										<a href="#">
-											八马茶业 八马安溪铁观音·小清新1号 252克
-										</a>
-									</dt>
-									<dd class="list_pinpai"><span>品牌:八马茶业</span>&nbsp;&nbsp;&nbsp;<span>销量:506</span></dd>
-									<dd class="list_price"><i>￥150.00</i></dd>
-								</dl>
-							</li>
-							<li>
-								<span>
-									<a href="#">
-										<img src="../../../images/tu_3.jpg" alt="" />
-									</a>
-								</span>
-								<dl>
-									<dt>
-										<a href="#">
-											八马茶业 八马安溪铁观音·小清新1号 252克
-										</a>
-									</dt>
-									<dd class="list_pinpai"><span>品牌:八马茶业</span>&nbsp;&nbsp;&nbsp;<span>销量:506</span></dd>
-									<dd class="list_price"><i>￥150.00</i></dd>
-								</dl>
-							</li>
-							<li>
-								<span>
-									<a href="#">
-										<img src="../../../images/tu_3.jpg" alt="" />
-									</a>
-								</span>
-								<dl>
-									<dt>
-										<a href="#">
-											八马茶业 八马安溪铁观音·小清新1号 252克
-										</a>
-									</dt>
-									<dd class="list_pinpai"><span>品牌:八马茶业</span>&nbsp;&nbsp;&nbsp;<span>销量:506</span></dd>
-									<dd class="list_price"><i>￥150.00</i></dd>
-								</dl>
-							</li>
-						</ul>-->
+						
 					</div>
 				</div>
 				<div class="bottom">
@@ -214,13 +117,13 @@
 		{{each list as value i}}
 							<li>
 								<span>
-									<a href="../../../car-detail.html#id={{value.goods_id}}">
+									<a href="../../../car-details.html#id={{value.goods_id}}">
 										<img src={{value.goods_image_url}}>
 									</a>
 								</span>
 								<dl>
 									<dt>
-										<a href="../../../car-detail.html#id={{value.goods_id}}">
+										<a href="../../../car-details.html#id={{value.goods_id}}">
 											{{value.goods_name}}
 										</a>
 									</dt>

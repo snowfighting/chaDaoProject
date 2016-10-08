@@ -70,7 +70,7 @@ window.onload = function(){
  * 获取地址栏参数
  */
 function UrlSearch(id){
-	var value;
+	var value = '';
 	var str = location.href;
 	var num = str.indexOf('#');
 	str = str.substr(num+1);
@@ -92,7 +92,29 @@ function UrlSearch(id){
  * ajax获取商品信息
  */
 var id = UrlSearch('id');
-console.log(id);
+$.ajax({
+	type:"get",
+	url:"/mock/list.json",
+	data:{
+		"goods_id":id
+	},
+	success:function(res){
+		var arr = res.data.list;
+//		console.log(arr)
+		for(var i = 0;i < arr.length;i++){
+			if(arr[i].goods_id == id){
+				var productObj = arr[i];
+				$('.goods-detail-name').html(productObj.goods_name);
+				$('#goods_marketprice').html(productObj.goods_marketprice);
+				$('#goods_price').html(productObj.goods_price);
+				$('#goods_salenum').html(productObj.goods_salenum);
+				$('#goods-img img').attr('src',productObj.goods_image_url);
+				$('#goods_salenum').html(productObj.goods_salenum);
+			}
+		}
+	},
+	typeData:'json'
+});
 
 
 

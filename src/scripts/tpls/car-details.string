@@ -49,7 +49,7 @@
 	</header>
 	<div class="swiper-container swiper-container-horizontal">
 		<ul class="swiper-wrapper">
-			<li class="swiper-slide">
+			<li class="swiper-slide" id="goods-img">
 				<img src="../../../images/sai1.jpg" />
 			</li>
 			<li class="swiper-slide">
@@ -114,10 +114,10 @@
 					</div>
 					<div class="goods-detail-price">
 						<dl>
-							<dt>直供价￥<i>420.00</i></dt>
-							<dd>零售价￥<i>600.00</i></dd>
+							<dt>直供价￥<i id="goods_marketprice">420.00</i></dt>
+							<dd>零售价￥<i id="goods_price">600.00</i></dd>
 						</dl>
-						<span class="sold">销量：359件</span>
+						<span class="sold">销量：<i id="goods_salenum">359</i>件</span>
 					</div>
 					<div class="goods-detail-item">
 						<span class="item-name">送至</span>
