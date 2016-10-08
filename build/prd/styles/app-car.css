@@ -747,7 +747,8 @@ a {
         text-align: center;
         font-weight: normal; }
     .car-container header .header-r {
-      width: 0.43rem; }
+      width: 0.43rem;
+      position: relative; }
       .car-container header .header-r a {
         display: block;
         width: 100%;
