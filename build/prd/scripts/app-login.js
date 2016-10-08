@@ -73,10 +73,30 @@
 	//<<<<<<< HEAD
 	//=======
 	//<<<<<<< HEAD
+	// <<<<<<< HEAD
+	//=======
+	//<<<<<<< HEAD
+	//>>>>>>> master
 	},
 	setHeader:function($el,str){
 		$el.html(str);
 	//>>>>>>> fengyuchao
+	//<<<<<<< HEAD
+	},
+	// =======
+
+	  setHeader:function($el,str){
+	  	$el.html(str);
+	//>>>>>>> fengyuchao
+	  },
+	// >>>>>>> master
+	switchPage: function (index) {
+	  // $('#footer li').eq(index).addClass('active').siblings().removeClass('active');
+	  $('#footer').on('click', 'li', function () {
+	    location.href = $(this).attr('data-url');
+	  })
+	//}
+	//=======
 	//<<<<<<< HEAD
 	//}
 	//=======
@@ -90,10 +110,13 @@
 	}
 
 	//>>>>>>> songxuejiao
+	//>>>>>>> master
 	};
 	//
+
 	module.exports = common;
 	//console.log(2)
+
 
 
 /***/ },

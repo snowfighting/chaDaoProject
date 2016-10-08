@@ -88,6 +88,7 @@
     width: 100%;
     height: 100%;
     @include flexbox();
+//  @include justify-content(start);
     .list{
       width: 0.95rem;
       overflow: hidden;
@@ -97,7 +98,6 @@
         overflow: auto;
         ul{
           padding: 0 0.125rem;
-
           li{
             width: 0.6159rem;
             height: 0.6159rem;
@@ -130,15 +130,20 @@
         }
       }
     }
+    }
     .list-detail{
-      width: 100%;
       background: #fff;
-      dl{
+      @include flex(1);
+//    width: 100%;
+      ul{
+//        width: 100%;
+          @include flexbox();
+          @include flex-wrap(wrap);
         background: #fff;
-        dd{
-          width: 0.766rem;
+        li{
+          width: 0.766rem;  
           height: 0.766rem;
-          display: inline-block;
+//        display: inline-block;
           padding: 0.044rem;
           margin: 0.066rem 0 0 0.066rem;
           a{
@@ -150,6 +155,6 @@
         }
       }
     }
-  }
+  
 }
 }

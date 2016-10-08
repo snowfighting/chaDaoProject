@@ -4,6 +4,16 @@ var footer=require('../tpls/footer.string');
 common.renderBody($('body'),str);
 common.append($('.container'),footer);
 common.switchPage(0);
+$.ajax({
+  url: '/mock/list.json',
+  success: function (res) {
+  	
+    var html = template('list', res.data);
+   
+    common.inner($('.list'), html);
+  }
+});
+
 var mySwiper = new Swiper('.swiper-container',{
 	loop : true,
 autoplay : 2000

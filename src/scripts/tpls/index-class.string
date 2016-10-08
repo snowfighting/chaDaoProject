@@ -111,58 +111,58 @@
       </div>
     </div>
     <div class="list-detail">
-      <dl class="tu">
-        <dd>
+      <ul class="tu">
+        <li>
           <a href="#">
             <img src="../../../images/tu_4.png" alt="" />
           </a>
-        </dd>
-        <dd>
+        </li>
+        <li>
           <a href="#">
             <img src="../../../images/tu_4.png" alt="" />
           </a>
-        </dd>
-        <dd>
+        </li>
+        <li>
           <a href="#">
             <img src="../../../images/tu_4.png" alt="" />
           </a>
-        </dd>
-        <dd>
+        </li>
+        <li>
           <a href="#">
             <img src="../../../images/tu_4.png" alt="" />
           </a>
-        </dd>
-        <dd>
+        </li>
+        <li>
           <a href="#">
             <img src="../../../images/tu_4.png" alt="" />
           </a>
-        </dd>
-        <dd>
+        </li>
+        <li>
           <a href="#">
             <img src="../../../images/tu_4.png" alt="" />
           </a>
-        </dd>
-        <dd>
+        </li>
+        <li>
           <a href="#">
             <img src="../../../images/tu_4.png" alt="" />
           </a>
-        </dd>
-        <dd>
+        </li>
+        <li>
           <a href="#">
             <img src="../../../images/tu_4.png" alt="" />
           </a>
-        </dd>
-        <dd>
+        </li>
+        <li>
           <a href="#">
             <img src="../../../images/tu_4.png" alt="" />
           </a>
-        </dd>
-        <dd>
+        </li>
+        <li>
           <a href="#">
             <img src="../../../images/tu_4.png" alt="" />
           </a>
-        </dd>
-      </dl>
+        </li>
+      </ul>
     </div>
   </section>
 </div>

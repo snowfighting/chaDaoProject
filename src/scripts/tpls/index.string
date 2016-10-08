@@ -86,7 +86,7 @@
 						为您推荐
 					</div>
 					<div class="list">
-						<ul class="good_list">
+						<!--<ul class="good_list">
 							<li>
 								<span>
 									<a href="#">
@@ -183,7 +183,7 @@
 									<dd class="list_price"><i>￥150.00</i></dd>
 								</dl>
 							</li>
-						</ul>
+						</ul>-->
 					</div>
 				</div>
 				<div class="bottom">
@@ -209,4 +209,26 @@
 	<div class="back">
 		<i></i>
 	</div>
+	<script id="list" type="text/html">
+		<ul class="good_list">
+		{{each list as value i}}
+							<li>
+								<span>
+									<a href="../../../car-detail.html#id={{value.goods_id}}">
+										<img src={{value.goods_image_url}}>
+									</a>
+								</span>
+								<dl>
+									<dt>
+										<a href="../../../car-detail.html#id={{value.goods_id}}">
+											{{value.goods_name}}
+										</a>
+									</dt>
+									<dd class="list_pinpai"><span>品牌:{{value.store_name}}</span> &nbsp;&nbsp;&nbsp; <span>销量:506</span></dd>
+									<dd class="list_price"><i>￥{{value.goods_price}}</i></dd>
+								</dl>
+							</li>
+							{{/each}}
+						</ul>
+	</script>
 </div>

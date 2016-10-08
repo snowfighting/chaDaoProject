@@ -649,11 +649,6 @@ a {
   -moz-osx-font-smoothing: grayscale;
   vertical-align: middle; }
 
-<<<<<<< HEAD
-@font-face {
-  font-family: 'iconfont';
-  src: url("iconfont.woff") format("woff"), url("iconfont.ttf") format("truetype"); }
-=======
 [type=tpl] {
   display: none; }
 
@@ -684,7 +679,6 @@ a {
 @font-face {
   font-family: 'iconfont';
   src: url("/build/images/iconfont/iconfont_sxj.woff") format("woff"), url("/build/images/iconfont/iconfont_sxj.ttf") format("truetype"); }
->>>>>>> fengyuchao
 
 .iconfont {
   font-family: iconfont; }
@@ -696,6 +690,7 @@ body #header #header-wrap {
   display: -webkit-flex;
   display: flex;
   text-align: center;
+  line-height: 0.44rem;
   line-height: 0.44rem;
   border-bottom: 0.5px solid #f4f4f4; }
   body #header #header-wrap #header-left {

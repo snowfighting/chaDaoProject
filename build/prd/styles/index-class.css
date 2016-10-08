@@ -650,9 +650,36 @@ a {
   -moz-osx-font-smoothing: grayscale;
   vertical-align: middle; }
 
+[type=tpl] {
+  display: none; }
+
 @font-face {
   font-family: 'iconfont';
-  src: url("iconfont.woff") format("woff"), url("iconfont.ttf") format("truetype"); }
+  src: url("/build/images/iconfont/iconfont_fyc.woff") format("woff"), url("/build/images/iconfont/iconfont_fyc.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'iconfont';
+  src: url("/build/images/iconfont/iconfont_fyc2.woff") format("woff"), url("/build/images/iconfont/iconfont_fyc2.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'iconfont';
+  src: url("/build/images/iconfont/iconfont_fyc3.woff") format("woff"), url("/build/images/iconfont/iconfont_fyc3.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'iconfont';
+  src: url("/build/images/iconfont/iconfont_fyc4.woff") format("woff"), url("/build/images/iconfont/iconfont_fyc4.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'iconfont';
+  src: url("/build/images/iconfont/iconfont_fyc5.woff") format("woff"), url("/build/images/iconfont/iconfont_fyc5.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'iconfont';
+  src: url("/build/images/iconfont/iconfont_fyc6.woff") format("woff"), url("/build/images/iconfont/iconfont_fyc6.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'iconfont';
+  src: url("/build/images/iconfont/iconfont_sxj.woff") format("woff"), url("/build/images/iconfont/iconfont_sxj.ttf") format("truetype"); }
 
 .iconfont {
   font-family: iconfont; }
@@ -779,17 +806,24 @@ a {
                 font-size: 0.14rem;
                 border-bottom: 0.01rem solid #e1e1e1;
                 color: #646464; }
-      .container section .list .list-detail {
-        width: 100%;
+    .container section .list-detail {
+      background: #fff;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+      flex: 1;
+      width: .1px; }
+      .container section .list-detail ul {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
         background: #fff; }
-        .container section .list .list-detail dl {
-          background: #fff; }
-          .container section .list .list-detail dl dd {
-            width: 0.766rem;
-            height: 0.766rem;
-            display: inline-block;
-            padding: 0.044rem;
-            margin: 0.066rem 0 0 0.066rem; }
-            .container section .list .list-detail dl dd a img {
-              width: 100%;
-              margin: 0.11rem 0; }
+        .container section .list-detail ul li {
+          width: 0.766rem;
+          height: 0.766rem;
+          padding: 0.044rem;
+          margin: 0.066rem 0 0 0.066rem; }
+          .container section .list-detail ul li a img {
+            width: 100%;
+            margin: 0.11rem 0; }
