@@ -70,9 +70,24 @@
 	    $('#footer').on('tap', 'li', function () {
 	      location.href = $(this).attr('data-url');
 	    })
+<<<<<<< HEAD
 	},
 	setHeader:function($el,str){
 		$el.html(str);
+=======
+	//<<<<<<< HEAD
+	//=======
+	//<<<<<<< HEAD
+	// <<<<<<< HEAD
+	//=======
+	//<<<<<<< HEAD
+	//>>>>>>> master
+	},
+	setHeader:function($el,str){
+		$el.html(str);
+	//>>>>>>> fengyuchao
+	//<<<<<<< HEAD
+>>>>>>> wuhuizhang
 	},
 	  setHeader:function($el,str){
 	  	$el.html(str);
@@ -82,7 +97,22 @@
 	  $('#footer').on('click', 'li', function () {
 	    location.href = $(this).attr('data-url');
 	  })
+	//}
+	//=======
+	//<<<<<<< HEAD
+	//}
+	//=======
+	},
+	  setHeader:function($el,str){
+	  	$el.html(str);
+	//>>>>>>> fengyuchao
+	//}
+	//>>>>>>> master
+	//=======
 	}
+
+	//>>>>>>> songxuejiao
+	//>>>>>>> master
 	};
 
 	module.exports = common;
@@ -129,7 +159,7 @@
 /***/ 29:
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"container\">  <header>    <div class=\"header-left\">      <a href=\"javascript:history.go(-1)\">        <i class=\"back\"></i>      </a>    </div>    <div class=\"header-search\">      <i></i>      <span>请输入关键字</span>    </div>    <div class=\"header-more\">      <a href=\"#\">        <i></i>      </a>    </div>  </header>  <section>    <div class=\"list\">      <div class=\"list2\" id=\"list-scroll\">        <ul class=\"goodlist\">          <li>            <a href=\"#\">              <i>                <img src=\"../../../images/degault.png\" alt=\"\" />              </i>              <p>品牌推荐</p>            </a>          </li>          <li>            <a href=\"#\">              <i>                <img src=\"../../../images/degault.png\" alt=\"\" />              </i>              <p>品牌推荐</p>            </a>          </li>          <li>            <a href=\"#\">              <i>                <img src=\"../../../images/degault.png\" alt=\"\" />              </i>              <p>品牌推荐</p>            </a>          </li>          <li>            <a href=\"#\">              <i>                <img src=\"../../../images/degault.png\" alt=\"\" />              </i>              <p>品牌推荐</p>            </a>          </li>          <li>            <a href=\"#\">              <i>                <img src=\"../../../images/degault.png\" alt=\"\" />              </i>              <p>品牌推荐</p>            </a>          </li>          <li>            <a href=\"#\">              <i>                <img src=\"../../../images/degault.png\" alt=\"\" />              </i>              <p>品牌推荐</p>            </a>          </li>          <li>            <a href=\"#\">              <i>                <img src=\"../../../images/degault.png\" alt=\"\" />              </i>              <p>品牌推荐</p>            </a>          </li>          <li>            <a href=\"#\">              <i>                <img src=\"../../../images/degault.png\" alt=\"\" />              </i>              <p>品牌推荐</p>            </a>          </li>          <li>            <a href=\"#\">              <i>                <img src=\"../../../images/degault.png\" alt=\"\" />              </i>              <p>品牌推荐</p>            </a>          </li>          <li>            <a href=\"#\">              <i>                <img src=\"../../../images/degault.png\" alt=\"\" />              </i>              <p>品牌推荐</p>            </a>          </li>          <li>            <a href=\"#\">              <i>                <img src=\"../../../images/degault.png\" alt=\"\" />              </i>              <p>品牌推荐</p>            </a>          </li>        </ul>      </div>    </div>    <div class=\"list-detail\">      <dl class=\"tu\">        <dd>          <a href=\"#\">            <img src=\"../../../images/tu_4.png\" alt=\"\" />          </a>        </dd>        <dd>          <a href=\"#\">            <img src=\"../../../images/tu_4.png\" alt=\"\" />          </a>        </dd>        <dd>          <a href=\"#\">            <img src=\"../../../images/tu_4.png\" alt=\"\" />          </a>        </dd>        <dd>          <a href=\"#\">            <img src=\"../../../images/tu_4.png\" alt=\"\" />          </a>        </dd>        <dd>          <a href=\"#\">            <img src=\"../../../images/tu_4.png\" alt=\"\" />          </a>        </dd>        <dd>          <a href=\"#\">            <img src=\"../../../images/tu_4.png\" alt=\"\" />          </a>        </dd>        <dd>          <a href=\"#\">            <img src=\"../../../images/tu_4.png\" alt=\"\" />          </a>        </dd>        <dd>          <a href=\"#\">            <img src=\"../../../images/tu_4.png\" alt=\"\" />          </a>        </dd>        <dd>          <a href=\"#\">            <img src=\"../../../images/tu_4.png\" alt=\"\" />          </a>        </dd>        <dd>          <a href=\"#\">            <img src=\"../../../images/tu_4.png\" alt=\"\" />          </a>        </dd>      </dl>    </div>  </section></div>"
+	module.exports = "<div class=\"container\">  <header>    <div class=\"header-left\">      <a href=\"javascript:history.go(-1)\">        <i class=\"back\"></i>      </a>    </div>    <div class=\"header-search\">      <i></i>      <span>请输入关键字</span>    </div>    <div class=\"header-more\">      <a href=\"#\">        <i></i>      </a>    </div>  </header>  <section>    <div class=\"list\">      <div class=\"list2\" id=\"list-scroll\">        <ul class=\"goodlist\">          <li>            <a href=\"#\">              <i>                <img src=\"../../../images/degault.png\" alt=\"\" />              </i>              <p>品牌推荐</p>            </a>          </li>          <li>            <a href=\"#\">              <i>                <img src=\"../../../images/degault.png\" alt=\"\" />              </i>              <p>品牌推荐</p>            </a>          </li>          <li>            <a href=\"#\">              <i>                <img src=\"../../../images/degault.png\" alt=\"\" />              </i>              <p>品牌推荐</p>            </a>          </li>          <li>            <a href=\"#\">              <i>                <img src=\"../../../images/degault.png\" alt=\"\" />              </i>              <p>品牌推荐</p>            </a>          </li>          <li>            <a href=\"#\">              <i>                <img src=\"../../../images/degault.png\" alt=\"\" />              </i>              <p>品牌推荐</p>            </a>          </li>          <li>            <a href=\"#\">              <i>                <img src=\"../../../images/degault.png\" alt=\"\" />              </i>              <p>品牌推荐</p>            </a>          </li>          <li>            <a href=\"#\">              <i>                <img src=\"../../../images/degault.png\" alt=\"\" />              </i>              <p>品牌推荐</p>            </a>          </li>          <li>            <a href=\"#\">              <i>                <img src=\"../../../images/degault.png\" alt=\"\" />              </i>              <p>品牌推荐</p>            </a>          </li>          <li>            <a href=\"#\">              <i>                <img src=\"../../../images/degault.png\" alt=\"\" />              </i>              <p>品牌推荐</p>            </a>          </li>          <li>            <a href=\"#\">              <i>                <img src=\"../../../images/degault.png\" alt=\"\" />              </i>              <p>品牌推荐</p>            </a>          </li>          <li>            <a href=\"#\">              <i>                <img src=\"../../../images/degault.png\" alt=\"\" />              </i>              <p>品牌推荐</p>            </a>          </li>        </ul>      </div>    </div>    <div class=\"list-detail\">      <ul class=\"tu\">        <li>          <a href=\"#\">            <img src=\"../../../images/tu_4.png\" alt=\"\" />          </a>        </li>        <li>          <a href=\"#\">            <img src=\"../../../images/tu_4.png\" alt=\"\" />          </a>        </li>        <li>          <a href=\"#\">            <img src=\"../../../images/tu_4.png\" alt=\"\" />          </a>        </li>        <li>          <a href=\"#\">            <img src=\"../../../images/tu_4.png\" alt=\"\" />          </a>        </li>        <li>          <a href=\"#\">            <img src=\"../../../images/tu_4.png\" alt=\"\" />          </a>        </li>        <li>          <a href=\"#\">            <img src=\"../../../images/tu_4.png\" alt=\"\" />          </a>        </li>        <li>          <a href=\"#\">            <img src=\"../../../images/tu_4.png\" alt=\"\" />          </a>        </li>        <li>          <a href=\"#\">            <img src=\"../../../images/tu_4.png\" alt=\"\" />          </a>        </li>        <li>          <a href=\"#\">            <img src=\"../../../images/tu_4.png\" alt=\"\" />          </a>        </li>        <li>          <a href=\"#\">            <img src=\"../../../images/tu_4.png\" alt=\"\" />          </a>        </li>      </ul>    </div>  </section></div>"
 
 /***/ }
 

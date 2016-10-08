@@ -70,22 +70,60 @@
 	    $('#footer').on('tap', 'li', function () {
 	      location.href = $(this).attr('data-url');
 	    })
+<<<<<<< HEAD
 	},
 	setHeader:function($el,str){
 		$el.html(str);
 	},
 	  setHeader:function($el,str){
 	  	$el.html(str);
+=======
+	//<<<<<<< HEAD
+	//=======
+	//<<<<<<< HEAD
+	// <<<<<<< HEAD
+	//=======
+	//<<<<<<< HEAD
+	//>>>>>>> master
+	},
+	setHeader:function($el,str){
+		$el.html(str);
+	//>>>>>>> fengyuchao
+	//<<<<<<< HEAD
+>>>>>>> wuhuizhang
 	},
 	switchPage: function (index) {
 	  // $('#footer li').eq(index).addClass('active').siblings().removeClass('active');
 	  $('#footer').on('click', 'li', function () {
 	    location.href = $(this).attr('data-url');
 	  })
+<<<<<<< HEAD
 	}
+=======
+	//}
+	//=======
+	//<<<<<<< HEAD
+	//}
+	//=======
+	},
+	  setHeader:function($el,str){
+	  	$el.html(str);
+	//>>>>>>> fengyuchao
+	//}
+	//>>>>>>> master
+	//=======
+	}
+
+	//>>>>>>> songxuejiao
+	//>>>>>>> master
+>>>>>>> wuhuizhang
 	};
 
 	module.exports = common;
+<<<<<<< HEAD
+=======
+	//console.log(2)
+>>>>>>> wuhuizhang
 
 
 
