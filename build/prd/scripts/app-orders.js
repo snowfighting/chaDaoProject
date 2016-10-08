@@ -44,43 +44,45 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(9);
+	module.exports = __webpack_require__(13);
 
 
 /***/ },
 /* 1 */,
 /* 2 */,
-/* 3 */,
-/* 4 */,
-/* 5 */,
-/* 6 */
+/* 3 */
 /***/ function(module, exports) {
 
 	/*** IMPORTS FROM imports-loader ***/
 	var define = false;
 
 	var common = {
-	  renderBody: function ($el, str) {
+	renderBody: function ($el, str) {
 	    $el.prepend(str);
-	  },
-	  inner: function ($el, str) {
+	},
+	inner: function ($el, str) {
 	    $el.html(str);
-	  },
-	  append: function ($el, str) {
+	},
+	append: function ($el, str) {
 	    $el.append(str);
-	  },
-
-	  switchPage: function (index) {
+	},
+	switchPage: function (index) {
 	    $('#footer').on('tap', 'li', function () {
 	      location.href = $(this).attr('data-url');
 	    })
-	//<<<<<<< HEAD
-	//=======
-	  },
+	},
+	setHeader:function($el,str){
+		$el.html(str);
+	},
 	  setHeader:function($el,str){
 	  	$el.html(str);
-	//>>>>>>> fengyuchao
-	  }
+	},
+	switchPage: function (index) {
+	  // $('#footer li').eq(index).addClass('active').siblings().removeClass('active');
+	  $('#footer').on('click', 'li', function () {
+	    location.href = $(this).attr('data-url');
+	  })
+	}
 	};
 
 	module.exports = common;
@@ -88,36 +90,48 @@
 
 
 /***/ },
-/* 7 */
+/* 4 */,
+/* 5 */
+/***/ function(module, exports) {
+
+	module.exports = "<footer id=\"footer\">	<ul>		<li data-url=\'../../../index.html\'>			<i class=\"iconfont\">&#xe60e;</i>			<b>首页</b>		</li>		<li data-url=\'../../../index-class.html\'>			<i class=\"iconfont\">&#xe647;</i>			<b>分类</b>		</li>		<li data-url=\'\'>			<i class=\"iconfont\">&#xe638;</i>			<b>消息</b>		</li>		<li data-url=\'../../../index-car.html\'>			<i class=\"iconfont\">&#xe764;</i>			<b>购物车</b>		</li>		<li data-url=\'../../../index-person.html\'>			<i class=\"iconfont\">&#xe655;</i>			<b>个人中心</b>		</li>	</ul></footer>"
+
+/***/ },
+/* 6 */,
+/* 7 */,
+/* 8 */,
+/* 9 */,
+/* 10 */,
+/* 11 */
 /***/ function(module, exports) {
 
 	module.exports = "<header id=\"header\">	<div id=\"header-wrap\">		<span class=\"iconfont\" id=\"header-left\">左边</span>		<div id=\"header-title\">标题</div>		<span class=\"iconfont\" id=\"header-right\">右边</span>	</div></header>"
 
 /***/ },
-/* 8 */,
-/* 9 */
+/* 12 */,
+/* 13 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*** IMPORTS FROM imports-loader ***/
 	var define = false;
 
-	__webpack_require__(10);
+	__webpack_require__(14);
 
 
 
 /***/ },
-/* 10 */
+/* 14 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*** IMPORTS FROM imports-loader ***/
 	var define = false;
 
-	var common = __webpack_require__(6);
+	var common = __webpack_require__(3);
 
-	var footer=__webpack_require__(11);
-	var header=__webpack_require__(7);
-	var body=__webpack_require__(12);
-	var comlist=__webpack_require__(13);
+	var footer=__webpack_require__(5);
+	var header=__webpack_require__(11);
+	var body=__webpack_require__(15);
+	var comlist=__webpack_require__(16);
 
 	$.ajax({
 	  url: '/mock/comlist.json',
@@ -239,19 +253,13 @@
 
 
 /***/ },
-/* 11 */
-/***/ function(module, exports) {
-
-	module.exports = "<footer id=\"footer\">	<ul>		<li data-url=\'/build/index.html\'>			<i class=\"iconfont\">&#xe60e;</i>			<b>首页</b>		</li>		<li data-url=\'/build/index-class.html\'>			<i class=\"iconfont\">&#xe647;</i>			<b>分类</b>		</li>		<li data-url=\'\'>			<i class=\"iconfont\">&#xe638;</i>			<b>消息</b>		</li>		<li data-url=\'/build/index-car.html\'>			<i class=\"iconfont\">&#xe764;</i>			<b>购物车</b>		</li>		<li data-url=\'/build/index-person.html\'>			<i class=\"iconfont\">&#xe655;</i>			<b>个人中心</b>		</li>	</ul></footer>"
-
-/***/ },
-/* 12 */
+/* 15 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"container\">	<section>		<div class=\"searchbox\">			<input type=\"text\" name=\"\" id=\"text\" placeholder=\"输入商品标题或者订单号进行查询\" />			<input type=\"button\" name=\"\" id=\"btn\" value=\"&#xe604\" class=\"iconfont\" />		</div>		<nav>			<ul>				<li><span class=\"active\">全部</span></li>				<li><span>待付款</span></li>				<li><span>待收货</span></li>				<li><span>待自提</span></li>				<li><span>待评价</span></li>			</ul>		</nav>		<div class=\"content\">			<div class=\"swiper-container\">			  <div class=\"swiper-wrapper\">			    <div class=\"swiper-slide\">			    	<section id=\"index-scroll\">			    				    		</section>					    </div>			    <div class=\"swiper-slide\">			    				    	<section class=\"emptyinfo\">			    		<i class=\"iconfont\">&#xe622;</i>			    		<span >			    			您还没有相关订单			    		</span>			    		<b>可以看看有什么想买的</b>			    		<a href=\"#\">随便逛逛</a>			    	</section>			    </div>			    <div class=\"swiper-slide\">			    	<section class=\"emptyinfo\">			    		<i class=\"iconfont\">&#xe622;</i>			    		<span >			    			您还没有相关订单			    		</span>			    		<b>可以看看有什么想买的</b>			    		<a href=\"#\">随便逛逛</a>			    	</section>			    </div>			    <div class=\"swiper-slide\">			    	<section class=\"emptyinfo\">			    		<i class=\"iconfont\">&#xe622;</i>			    		<span >			    			您还没有相关订单			    		</span>			    		<b>可以看看有什么想买的</b>			    		<a href=\"#\">随便逛逛</a>			    	</section>			    </div>			    <div class=\"swiper-slide\">			    	<section class=\"emptyinfo\">			    		<i class=\"iconfont\">&#xe622;</i>			    		<span >			    			您还没有相关订单			    		</span>			    		<b>可以看看有什么想买的</b>			    		<a href=\"#\">随便逛逛</a>			    	</section>			    </div>			  </div>			</div>		</div>			</section>	<script id=\"list\" type=\"text/html\">		<ul>			{{each list as value i}}				<li>			    			<div class=\"item\">			    				<div id=\"order-title\">			    					<i class=\"iconfont\">&#xe638;</i>			    					<span class=\"title\">{{value.title}}</span>			    					<span id=\"status\">{{value.status}}</span>			    				</div>			    				<div class=\"order-com\">			    					<img src={{value.img}}>			    					<p>{{value.content}}</p>			    					<div class=\"priceandnum\">			    						<span id=\"price\">			    							￥{{value.perprice}}			    						</span>			    						<span id=\"num\">			    							x{{value.num}}			    						</span>			    					</div>			    				</div>			    				<div class=\"total\">			    					<p>共<span class=\"total_num\">{{value.num}}</span>键商品，合计<span class=\"total_price\">￥{{value.totalprice}}</span></p>			    				</div>			    				<div class=\"cancel\">			    					<a href=\"#\">取消订单</a>			    				</div>			    							    				<button>订单支付(<span>￥{{value.totalprice}}元</span>)</button>			    			</div>			    		</li>			{{/each}}		</ul>	</script></div>"
 
 /***/ },
-/* 13 */
+/* 16 */
 /***/ function(module, exports) {
 
 	module.exports = "			    		<li>			    			<div class=\"item\">			    				<div id=\"order-title\">			    					<i class=\"iconfont\">&#xe638;</i>			    					<span class=\"title\">八马茶叶</span>			    					<span id=\"status\">待付款</span>			    				</div>			    				<div class=\"order-com\">			    					<img src=\"http://upload.chadaodian.com/shop/store/goods/3/3_53904065nba9baa43_240.jpg\"/>			    					<p>卡拉加速度克劳馥就阿斯顿分类空间速度发</p>			    					<div class=\"priceandnum\">			    						<span id=\"price\">			    							￥420.0			    						</span>			    						<span id=\"num\">			    							1			    						</span>			    					</div>			    				</div>			    				<div class=\"total\">			    					<p>共<span class=\"total_num\">1</span>键商品，合计<span class=\"total_price\">￥421.3</span></p>			    				</div>			    				<div class=\"cancel\">			    					<a href=\"#\">取消订单</a>			    				</div>			    							    				<button>订单支付(<span>￥313元</span>)</button>			    			</div>			    		</li>			    		<li>			    			<div class=\"item\">			    				<div id=\"order-title\">			    					<i class=\"iconfont\">&#xe638;</i>			    					<span class=\"title\">八马茶叶</span>			    					<span id=\"status\">待付款</span>			    				</div>			    				<div class=\"order-com\">			    					<img src=\"http://upload.chadaodian.com/shop/store/goods/3/3_53904065nba9baa43_240.jpg\"/>			    					<p>卡拉加速度克劳馥就阿斯顿分类空间速度发</p>			    					<div class=\"priceandnum\">			    						<span id=\"price\">			    							￥420.0			    						</span>			    						<span id=\"num\">			    							1			    						</span>			    					</div>			    				</div>			    				<div class=\"total\">			    					<p>共<span class=\"total_num\">1</span>键商品，合计<span class=\"total_price\">￥421.3</span></p>			    				</div>			    				<div class=\"cancel\">			    					<a href=\"#\">取消订单</a>			    				</div>			    							    				<button>订单支付(<span>￥313元</span>)</button>			    			</div>			    		</li>			    		<li>			    			<div class=\"item\">			    				<div id=\"order-title\">			    					<i class=\"iconfont\">&#xe638;</i>			    					<span class=\"title\">八马茶叶</span>			    					<span id=\"status\">待付款</span>			    				</div>			    				<div class=\"order-com\">			    					<img src=\"http://upload.chadaodian.com/shop/store/goods/3/3_53904065nba9baa43_240.jpg\"/>			    					<p>卡拉加速度克劳馥就阿斯顿分类空间速度发</p>			    					<div class=\"priceandnum\">			    						<span id=\"price\">			    							￥420.0			    						</span>			    						<span id=\"num\">			    							1			    						</span>			    					</div>			    				</div>			    				<div class=\"total\">			    					<p>共<span class=\"total_num\">1</span>键商品，合计<span class=\"total_price\">￥421.3</span></p>			    				</div>			    				<div class=\"cancel\">			    					<a href=\"#\">取消订单</a>			    				</div>			    							    				<button>订单支付(<span>￥313元</span>)</button>			    			</div>			    		</li>			    		<li>			    			<div class=\"item\">			    				<div id=\"order-title\">			    					<i class=\"iconfont\">&#xe638;</i>			    					<span class=\"title\">八马茶叶</span>			    					<span id=\"status\">待付款</span>			    				</div>			    				<div class=\"order-com\">			    					<img src=\"http://upload.chadaodian.com/shop/store/goods/3/3_53904065nba9baa43_240.jpg\"/>			    					<p>卡拉加速度克劳馥就阿斯顿分类空间速度发</p>			    					<div class=\"priceandnum\">			    						<span id=\"price\">			    							￥420.0			    						</span>			    						<span id=\"num\">			    							1			    						</span>			    					</div>			    				</div>			    				<div class=\"total\">			    					<p>共<span class=\"total_num\">1</span>键商品，合计<span class=\"total_price\">￥421.3</span></p>			    				</div>			    				<div class=\"cancel\">			    					<a href=\"#\">取消订单</a>			    				</div>			    							    				<button>订单支付(<span>￥313元</span>)</button>			    			</div>			    		</li>			    "

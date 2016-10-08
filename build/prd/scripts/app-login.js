@@ -44,35 +44,79 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(4);
+	module.exports = __webpack_require__(9);
 
 
 /***/ },
 /* 1 */,
 /* 2 */,
-/* 3 */,
-/* 4 */
+/* 3 */
+/***/ function(module, exports) {
+
+	/*** IMPORTS FROM imports-loader ***/
+	var define = false;
+
+	var common = {
+	renderBody: function ($el, str) {
+	    $el.prepend(str);
+	},
+	inner: function ($el, str) {
+	    $el.html(str);
+	},
+	append: function ($el, str) {
+	    $el.append(str);
+	},
+	switchPage: function (index) {
+	    $('#footer').on('tap', 'li', function () {
+	      location.href = $(this).attr('data-url');
+	    })
+	},
+	setHeader:function($el,str){
+		$el.html(str);
+	},
+	  setHeader:function($el,str){
+	  	$el.html(str);
+	},
+	switchPage: function (index) {
+	  // $('#footer li').eq(index).addClass('active').siblings().removeClass('active');
+	  $('#footer').on('click', 'li', function () {
+	    location.href = $(this).attr('data-url');
+	  })
+	}
+	};
+
+	module.exports = common;
+
+
+
+/***/ },
+/* 4 */,
+/* 5 */,
+/* 6 */,
+/* 7 */,
+/* 8 */,
+/* 9 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*** IMPORTS FROM imports-loader ***/
 	var define = false;
 
-	__webpack_require__(5);
+	__webpack_require__(10);
 
 
 
 
 /***/ },
-/* 5 */
+/* 10 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*** IMPORTS FROM imports-loader ***/
 	var define = false;
 
-	var common = __webpack_require__(6);
+	var common = __webpack_require__(3);
 
-	var header=__webpack_require__(7);
-	var body=__webpack_require__(8);
+	var header=__webpack_require__(11);
+	var body=__webpack_require__(12);
 
 	common.renderBody($('body'),header);
 	common.append($('body'),body);
@@ -160,48 +204,13 @@
 
 
 /***/ },
-/* 6 */
-/***/ function(module, exports) {
-
-	/*** IMPORTS FROM imports-loader ***/
-	var define = false;
-
-	var common = {
-	  renderBody: function ($el, str) {
-	    $el.prepend(str);
-	  },
-	  inner: function ($el, str) {
-	    $el.html(str);
-	  },
-	  append: function ($el, str) {
-	    $el.append(str);
-	  },
-
-	  switchPage: function (index) {
-	    $('#footer').on('tap', 'li', function () {
-	      location.href = $(this).attr('data-url');
-	    })
-	//<<<<<<< HEAD
-	//=======
-	  },
-	  setHeader:function($el,str){
-	  	$el.html(str);
-	//>>>>>>> fengyuchao
-	  }
-	};
-
-	module.exports = common;
-
-
-
-/***/ },
-/* 7 */
+/* 11 */
 /***/ function(module, exports) {
 
 	module.exports = "<header id=\"header\">	<div id=\"header-wrap\">		<span class=\"iconfont\" id=\"header-left\">左边</span>		<div id=\"header-title\">标题</div>		<span class=\"iconfont\" id=\"header-right\">右边</span>	</div></header>"
 
 /***/ },
-/* 8 */
+/* 12 */
 /***/ function(module, exports) {
 
 	module.exports = "<div id=\"container\">	<div id=\"errorInfo\">		您输入的用户名或者密码有误	</div>	<ul>		<li>			<span>手机号</span>			<div class=\"inputbox\">				<input type=\"text\" placeholder=\"请输入手机号码\" id=\"phonenumber\"/>				<span id=\"phoneInfo\" class=\"iconfont\">&#xe6a0;</span>			</div>					</li>		<li>			<span>密码</span>			<div class=\"inputbox\">				<input type=\"password\" placeholder=\"请输入密码\" id=\"password\"/>				<span id=\"passInfo\" class=\"iconfont\">&#xe6a0;</span>			</div>					</li>		<div id=\"loginsetting\">			<p><input type=\"checkbox\" name=\"\" id=\"remBtn\" value=\"\" />7天自动登陆</p>			<a href=\"#\">忘记密码？</a>		</div>		<input type=\"button\" value=\"登&nbsp;&nbsp;陆\"  id=\"loginBtn\"/>	</ul></div>"

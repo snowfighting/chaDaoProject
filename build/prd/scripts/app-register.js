@@ -40,25 +40,17 @@
 /******/ 	return __webpack_require__(0);
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */
+/******/ ({
+
+/***/ 0:
 /***/ function(module, exports, __webpack_require__) {
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-	module.exports = __webpack_require__(10);
-=======
-	module.exports = __webpack_require__(17);
->>>>>>> fengyuchao
-=======
-	module.exports = __webpack_require__(10);
->>>>>>> wuhuizhang
+	module.exports = __webpack_require__(20);
 
 
 /***/ },
-/* 1 */,
-/* 2 */,
-/* 3 */
+
+/***/ 3:
 /***/ function(module, exports) {
 
 	/*** IMPORTS FROM imports-loader ***/
@@ -78,142 +70,56 @@
 	    $('#footer').on('tap', 'li', function () {
 	      location.href = $(this).attr('data-url');
 	    })
-	//<<<<<<< HEAD
-	//=======
-<<<<<<< HEAD
-	//<<<<<<< HEAD
-=======
-	// <<<<<<< HEAD
->>>>>>> wuhuizhang
 	},
 	setHeader:function($el,str){
 		$el.html(str);
-	//>>>>>>> fengyuchao
-<<<<<<< HEAD
-	//<<<<<<< HEAD
-	//}
-	//=======
 	},
 	  setHeader:function($el,str){
 	  	$el.html(str);
-	//>>>>>>> fengyuchao
-	//}
-	//>>>>>>> master
-	//=======
-=======
 	},
-	// =======
-
-	  setHeader:function($el,str){
-	  	$el.html(str);
-	//>>>>>>> fengyuchao
-	  },
-	// >>>>>>> master
 	switchPage: function (index) {
 	  // $('#footer li').eq(index).addClass('active').siblings().removeClass('active');
 	  $('#footer').on('click', 'li', function () {
 	    location.href = $(this).attr('data-url');
 	  })
->>>>>>> wuhuizhang
 	}
-
-	//>>>>>>> songxuejiao
 	};
-	//
 
 	module.exports = common;
-	//console.log(2)
 
 
 
 /***/ },
-/* 4 */,
-/* 5 */,
-/* 6 */,
-/* 7 */,
-/* 8 */,
-/* 9 */,
-/* 10 */
+
+/***/ 11:
+/***/ function(module, exports) {
+
+	module.exports = "<header id=\"header\">	<div id=\"header-wrap\">		<span class=\"iconfont\" id=\"header-left\">左边</span>		<div id=\"header-title\">标题</div>		<span class=\"iconfont\" id=\"header-right\">右边</span>	</div></header>"
+
+/***/ },
+
+/***/ 20:
 /***/ function(module, exports, __webpack_require__) {
 
 	/*** IMPORTS FROM imports-loader ***/
 	var define = false;
 
-	__webpack_require__(11);
+	__webpack_require__(21);
 
 
 
 /***/ },
-/* 11 */
+
+/***/ 21:
 /***/ function(module, exports, __webpack_require__) {
-<<<<<<< HEAD
-=======
-/* 3 */,
-/* 4 */,
-/* 5 */,
-/* 6 */
-/***/ function(module, exports) {
->>>>>>> fengyuchao
-=======
->>>>>>> wuhuizhang
 
 	/*** IMPORTS FROM imports-loader ***/
 	var define = false;
 
 	var common = __webpack_require__(3);
 
-	var header=__webpack_require__(12);
-	var body=__webpack_require__(13);
-
-	common.renderBody($('body'),header);
-	common.append($('body'),body);
-	common.setHeader($('#header-title'),"注册");
-	common.setHeader($('#header-left'),"左");
-	common.setHeader($('#header-right'),"右");
-
-
-/***/ },
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 12 */
-=======
-/* 7 */
->>>>>>> fengyuchao
-/***/ function(module, exports) {
-
-	module.exports = "<header id=\"header\">	<div id=\"header-wrap\">		<span class=\"iconfont\" id=\"header-left\">左边</span>		<div id=\"header-title\">标题</div>		<span class=\"iconfont\" id=\"header-right\">右边</span>	</div></header>"
-
-/***/ },
-/* 8 */,
-/* 9 */,
-/* 10 */,
-/* 11 */,
-/* 12 */,
-/* 13 */,
-/* 14 */,
-/* 15 */,
-/* 16 */,
-/* 17 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/*** IMPORTS FROM imports-loader ***/
-	var define = false;
-
-	__webpack_require__(18);
-
-
-
-/***/ },
-/* 18 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/*** IMPORTS FROM imports-loader ***/
-	var define = false;
-
-	var common = __webpack_require__(6);
-
-	var header=__webpack_require__(7);
-	var body=__webpack_require__(19);
+	var header=__webpack_require__(11);
+	var body=__webpack_require__(22);
 
 	common.renderBody($('body'),header);
 	common.append($('body'),body);
@@ -307,23 +213,12 @@
 
 
 /***/ },
-<<<<<<< HEAD
-/* 13 */
-=======
-/* 19 */
->>>>>>> fengyuchao
-=======
-/* 12 */
-/***/ function(module, exports) {
 
-	module.exports = "<header id=\"header\">	<div id=\"header-wrap\">		<span id=\"header-left\">左边</span>		<div id=\"header-title\">标题</div>		<span id=\"header-right\">右边</span>	</div></header>"
-
-/***/ },
-/* 13 */
->>>>>>> wuhuizhang
+/***/ 22:
 /***/ function(module, exports) {
 
 	module.exports = "<div id=\"container\">	<ul>		<li>			<span>手机号</span>			<div class=\"inputbox\">				<input type=\"text\" placeholder=\"请输入手机号码\" id=\"phonenumber\"/>				<span id=\"phoneInfo\" class=\"iconfont\">&#xe6a0;</span>			</div>					</li>		<li>			<span>动态码</span>			<div class=\"inputbox\">				<input type=\"text\" placeholder=\"请输入验证码\" id=\"code\"/>				<a href=\"#\">短信获取</a>				<span id=\"codeInfo\" class=\"iconfont\">&#xe6a0;</span>			</div>			</li>		<li>			<span>密码</span>			<div class=\"inputbox\">				<input type=\"password\" placeholder=\"请输入密码\" id=\"password\"/>				<span id=\"passInfo\" class=\"iconfont\">&#xe6a0;</span>			</div>					</li>		<input type=\"checkbox\" name=\"\" id=\"showBtn\" value=\"\" />显示密码		<input type=\"button\" value=\"注册\"  id=\"regBtn\"/>	</ul></div>"
 
 /***/ }
-/******/ ]);
+
+/******/ });
