@@ -65,7 +65,7 @@
 	/*** IMPORTS FROM imports-loader ***/
 	var define = false;
 
-	var common=__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../utils/common.util.js\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	var common=__webpack_require__(3);
 	var str = __webpack_require__(4);
 	var footer=__webpack_require__(5);
 	common.renderBody($('body'),str);
@@ -109,7 +109,46 @@
 
 
 /***/ },
-/* 3 */,
+/* 3 */
+/***/ function(module, exports) {
+
+	/*** IMPORTS FROM imports-loader ***/
+	var define = false;
+
+	var common = {
+	renderBody: function ($el, str) {
+	    $el.prepend(str);
+	},
+	inner: function ($el, str) {
+	    $el.html(str);
+	},
+	append: function ($el, str) {
+	    $el.append(str);
+	},
+	switchPage: function (index) {
+	    $('#footer').on('tap', 'li', function () {
+	      location.href = $(this).attr('data-url');
+	    })
+	},
+	setHeader:function($el,str){
+		$el.html(str);
+	},
+	  setHeader:function($el,str){
+	  	$el.html(str);
+	},
+	switchPage: function (index) {
+	  // $('#footer li').eq(index).addClass('active').siblings().removeClass('active');
+	  $('#footer').on('click', 'li', function () {
+	    location.href = $(this).attr('data-url');
+	  })
+	}
+	};
+
+	module.exports = common;
+
+
+
+/***/ },
 /* 4 */
 /***/ function(module, exports) {
 
