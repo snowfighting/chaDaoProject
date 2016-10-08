@@ -67,7 +67,7 @@
 	    $el.append(str);
 	},
 	switchPage: function (index) {
-<<<<<<< HEAD
+//<<<<<<< HEAD
 	    $('#footer').on('click', 'li', function () {
 	      location.href = $(this).attr('data-url');
 	    })
@@ -88,8 +88,7 @@
 	//}
 	//>>>>>>> master
 	//=======
-	}
-=======
+//	}
 	    $('#footer').on('tap', 'li', function () {
 	      location.href = $(this).attr('data-url');
 	    })
@@ -106,10 +105,10 @@
 	}
 	 
 	};
->>>>>>> master
+//>>>>>>> master
 
 	//>>>>>>> songxuejiao
-	};
+//	}
 	//
 	module.exports = common;
 	//console.log(2)
@@ -123,8 +122,8 @@
 	module.exports = "<footer id=\"footer\">	<ul>		<li data-url=\'../../../index.html\'>			<i class=\"iconfont\">&#xe60e;</i>			<b>首页</b>		</li>		<li data-url=\'../../../index-class.html\'>			<i class=\"iconfont\">&#xe647;</i>			<b>分类</b>		</li>		<li data-url=\'\'>			<i class=\"iconfont\">&#xe638;</i>			<b>消息</b>		</li>		<li data-url=\'../../../index-car.html\'>			<i class=\"iconfont\">&#xe764;</i>			<b>购物车</b>		</li>		<li data-url=\'../../../index-person.html\'>			<i class=\"iconfont\">&#xe655;</i>			<b>个人中心</b>		</li>	</ul></footer>"
 
 /***/ },
-<<<<<<< HEAD
-=======
+//<<<<<<< HEAD
+//=======
 /* 4 */,
 /* 5 */
 /***/ function(module, exports) {
@@ -132,7 +131,7 @@
 	module.exports = "<footer id=\"footer\">	<ul>		<li data-url=\'../../../index.html\'>			<i class=\"iconfont\">&#xe60e;</i>			<b>首页</b>		</li>		<li data-url=\'../../../index-class.html\'>			<i class=\"iconfont\">&#xe647;</i>			<b>分类</b>		</li>		<li data-url=\'\'>			<i class=\"iconfont\">&#xe638;</i>			<b>消息</b>		</li>		<li data-url=\'../../../index-car.html\'>			<i class=\"iconfont\">&#xe764;</i>			<b>购物车</b>		</li>		<li data-url=\'../../../index-person.html\'>			<i class=\"iconfont\">&#xe655;</i>			<b>个人中心</b>		</li>	</ul></footer>"
 
 /***/ },
->>>>>>> master
+//>>>>>>> master
 /* 6 */,
 /* 7 */,
 /* 8 */,
