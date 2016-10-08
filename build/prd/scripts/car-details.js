@@ -72,16 +72,16 @@
 	    })
 	//<<<<<<< HEAD
 	//=======
-<<<<<<< HEAD
-	// <<<<<<< HEAD
-=======
 	//<<<<<<< HEAD
->>>>>>> master
+	// <<<<<<< HEAD
+	//=======
+	//<<<<<<< HEAD
+	//>>>>>>> master
 	},
 	setHeader:function($el,str){
 		$el.html(str);
 	//>>>>>>> fengyuchao
-<<<<<<< HEAD
+	//<<<<<<< HEAD
 	},
 	// =======
 
@@ -95,7 +95,8 @@
 	  $('#footer').on('click', 'li', function () {
 	    location.href = $(this).attr('data-url');
 	  })
-=======
+	//}
+	//=======
 	//<<<<<<< HEAD
 	//}
 	//=======
@@ -106,10 +107,10 @@
 	//}
 	//>>>>>>> master
 	//=======
->>>>>>> master
 	}
 
 	//>>>>>>> songxuejiao
+	//>>>>>>> master
 	};
 	//
 
@@ -117,7 +118,6 @@
 	//console.log(2)
 
 
-<<<<<<< HEAD
 
 /***/ },
 /* 4 */,
@@ -141,30 +141,6 @@
 
 
 /***/ },
-=======
-/***/ },
-/* 4 */,
-/* 5 */,
-/* 6 */,
-/* 7 */,
-/* 8 */,
-/* 9 */,
-/* 10 */,
-/* 11 */,
-/* 12 */,
-/* 13 */,
-/* 14 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/*** IMPORTS FROM imports-loader ***/
-	var define = false;
-
-	__webpack_require__(15);
-
-
-
-/***/ },
->>>>>>> master
 /* 15 */
 /***/ function(module, exports, __webpack_require__) {
 

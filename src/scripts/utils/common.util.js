@@ -14,16 +14,16 @@ switchPage: function (index) {
     })
 //<<<<<<< HEAD
 //=======
-<<<<<<< HEAD
-// <<<<<<< HEAD
-=======
 //<<<<<<< HEAD
->>>>>>> master
+// <<<<<<< HEAD
+//=======
+//<<<<<<< HEAD
+//>>>>>>> master
 },
 setHeader:function($el,str){
 	$el.html(str);
 //>>>>>>> fengyuchao
-<<<<<<< HEAD
+//<<<<<<< HEAD
 },
 // =======
 
@@ -37,8 +37,8 @@ switchPage: function (index) {
   $('#footer').on('click', 'li', function () {
     location.href = $(this).attr('data-url');
   })
-}
-=======
+//}
+//=======
 //<<<<<<< HEAD
 //}
 //=======
@@ -52,7 +52,7 @@ switchPage: function (index) {
 }
 
 //>>>>>>> songxuejiao
->>>>>>> master
+//>>>>>>> master
 };
 //
 

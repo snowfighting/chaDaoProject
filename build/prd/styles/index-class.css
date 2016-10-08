@@ -779,17 +779,17 @@ a {
                 font-size: 0.14rem;
                 border-bottom: 0.01rem solid #e1e1e1;
                 color: #646464; }
-    .container section .list-detail {
-      width: 100%;
-      background: #fff; }
-      .container section .list-detail dl {
+      .container section .list .list-detail {
+        width: 100%;
         background: #fff; }
-        .container section .list-detail dl dd {
-          width: 0.766rem;
-          height: 0.766rem;
-          display: inline-block;
-          padding: 0.044rem;
-          margin: 0.066rem 0 0 0.066rem; }
-          .container section .list-detail dl dd a img {
-            width: 100%;
-            margin: 0.11rem 0; }
+        .container section .list .list-detail dl {
+          background: #fff; }
+          .container section .list .list-detail dl dd {
+            width: 0.766rem;
+            height: 0.766rem;
+            display: inline-block;
+            padding: 0.044rem;
+            margin: 0.066rem 0 0 0.066rem; }
+            .container section .list .list-detail dl dd a img {
+              width: 100%;
+              margin: 0.11rem 0; }
