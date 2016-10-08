@@ -382,7 +382,7 @@
 			<div class="buy-handle">
 				<a href="javascript:void:(0);">立即购买</a>
 			</div>
-			<div class="car-handle">
+			<div class="car-handle" id="car-handle">
 				<a href="javascript:void(0);">加入购物车</a>
 			</div>
 		</div>

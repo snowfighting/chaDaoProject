@@ -67,6 +67,7 @@
 	    $el.append(str);
 	},
 	switchPage: function (index) {
+<<<<<<< HEAD
 	    $('#footer').on('click', 'li', function () {
 	      location.href = $(this).attr('data-url');
 	    })
@@ -88,6 +89,24 @@
 	//>>>>>>> master
 	//=======
 	}
+=======
+	    $('#footer').on('tap', 'li', function () {
+	      location.href = $(this).attr('data-url');
+	    })
+	},
+	setHeader:function($el,str){
+		$el.html(str);
+	},
+
+	switchPage: function (index) {
+	  // $('#footer li').eq(index).addClass('active').siblings().removeClass('active');
+	  $('#footer').on('click', 'li', function () {
+	    location.href = $(this).attr('data-url');
+	  })
+	}
+	 
+	};
+>>>>>>> master
 
 	//>>>>>>> songxuejiao
 	};
@@ -104,6 +123,24 @@
 	module.exports = "<footer id=\"footer\">	<ul>		<li data-url=\'../../../index.html\'>			<i class=\"iconfont\">&#xe60e;</i>			<b>首页</b>		</li>		<li data-url=\'../../../index-class.html\'>			<i class=\"iconfont\">&#xe647;</i>			<b>分类</b>		</li>		<li data-url=\'\'>			<i class=\"iconfont\">&#xe638;</i>			<b>消息</b>		</li>		<li data-url=\'../../../index-car.html\'>			<i class=\"iconfont\">&#xe764;</i>			<b>购物车</b>		</li>		<li data-url=\'../../../index-person.html\'>			<i class=\"iconfont\">&#xe655;</i>			<b>个人中心</b>		</li>	</ul></footer>"
 
 /***/ },
+<<<<<<< HEAD
+/* 6 */,
+/* 7 */,
+/* 8 */,
+/* 9 */,
+/* 10 */,
+/* 11 */
+=======
+/* 4 */,
+/* 5 */
+>>>>>>> master
+/***/ function(module, exports) {
+
+	module.exports = "<footer id=\"footer\">	<ul>		<li data-url=\'../../../index.html\'>			<i class=\"iconfont\">&#xe60e;</i>			<b>首页</b>		</li>		<li data-url=\'../../../index-class.html\'>			<i class=\"iconfont\">&#xe647;</i>			<b>分类</b>		</li>		<li data-url=\'\'>			<i class=\"iconfont\">&#xe638;</i>			<b>消息</b>		</li>		<li data-url=\'../../../index-car.html\'>			<i class=\"iconfont\">&#xe764;</i>			<b>购物车</b>		</li>		<li data-url=\'../../../index-person.html\'>			<i class=\"iconfont\">&#xe655;</i>			<b>个人中心</b>		</li>	</ul></footer>"
+
+/***/ },
+<<<<<<< HEAD
+=======
 /* 6 */,
 /* 7 */,
 /* 8 */,
@@ -115,6 +152,7 @@
 	module.exports = "<header id=\"header\">	<div id=\"header-wrap\">		<span class=\"iconfont\" id=\"header-left\">左边</span>		<div id=\"header-title\">标题</div>		<span class=\"iconfont\" id=\"header-right\">右边</span>	</div></header>"
 
 /***/ },
+>>>>>>> master
 /* 12 */,
 /* 13 */
 /***/ function(module, exports, __webpack_require__) {

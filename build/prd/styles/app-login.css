@@ -691,6 +691,10 @@ body #header #header-wrap {
   display: flex;
   text-align: center;
   line-height: 0.44rem;
+  border-bottom: 0.5px solid #f4f4f4;
+  line-height: 0.44rem;
+  line-height: 0.44rem;
+  line-height: 0.44rem;
   border-bottom: 0.5px solid #f4f4f4; }
   body #header #header-wrap #header-left {
     width: 0.44rem;

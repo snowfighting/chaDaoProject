@@ -67,6 +67,7 @@
 	    $el.append(str);
 	},
 	switchPage: function (index) {
+<<<<<<< HEAD
 	    $('#footer').on('click', 'li', function () {
 	      location.href = $(this).attr('data-url');
 	    })
@@ -94,6 +95,27 @@
 	//
 	module.exports = common;
 	//console.log(2)
+=======
+	    $('#footer').on('tap', 'li', function () {
+	      location.href = $(this).attr('data-url');
+	    })
+	},
+	setHeader:function($el,str){
+		$el.html(str);
+	},
+
+	switchPage: function (index) {
+	  // $('#footer li').eq(index).addClass('active').siblings().removeClass('active');
+	  $('#footer').on('click', 'li', function () {
+	    location.href = $(this).attr('data-url');
+	  })
+	}
+	 
+	};
+
+	module.exports = common;
+
+>>>>>>> master
 
 
 /***/ },

@@ -70,32 +70,27 @@
 	    $('#footer').on('click', 'li', function () {
 	      location.href = $(this).attr('data-url');
 	    })
-	//<<<<<<< HEAD
-	//=======
-	//<<<<<<< HEAD
 	},
 	setHeader:function($el,str){
 		$el.html(str);
-	//>>>>>>> fengyuchao
-	//<<<<<<< HEAD
-	//}
-	//=======
 	},
-	  setHeader:function($el,str){
-	  	$el.html(str);
-	//>>>>>>> fengyuchao
-	//}
-	//>>>>>>> master
-	//=======
+
+	switchPage: function (index) {
+	  // $('#footer li').eq(index).addClass('active').siblings().removeClass('active');
+	  $('#footer').on('click', 'li', function () {
+	    location.href = $(this).attr('data-url');
+	  })
 	}
-
-	//>>>>>>> songxuejiao
+	 
 	};
-	//
+
+<<<<<<< HEAD
+=======
 	module.exports = common;
-	//console.log(2)
 
 
+
+>>>>>>> master
 /***/ },
 
 /***/ 11:

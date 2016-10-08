@@ -18,7 +18,7 @@
      .header_left{
        width: 0.66rem;
        height: 0.345rem;
-       position: fixed;;;
+       position: fixed;
        z-index: 1;
        left: 0.088rem;
        top:0.05rem;
@@ -29,7 +29,6 @@
      }
      .header_search{
        text-align:  center;
-       // height: 0.3rem;
        margin: 0 auto;
        a{
          border-radius: 5px;
@@ -63,18 +62,11 @@
      background-repeat: no-repeat;
      background-position: 50% 50%;
      display: none;
-    //  transition: all 0.5s;
    }
    .box1{
-    //  height: 100%;
-    // @include flex(1);
      overflow: auto;;
      width: 100%;
-    //  height: 100%;
     .box2{
-      // height: 100%;
-      // overflow: hidden;
-      // position: relative;
       header{
         height: 44px;
         background: rgb(208,42,42);
@@ -86,8 +78,6 @@
           @include align-items(center);
           li{
             @include flex(1);
-            //  @include flexbox();
-            //             @include align-items(center);
             padding: 0 0 0 0.15rem;
             @include justify-content(center);
             a{
@@ -202,10 +192,8 @@
             @include justify-content(around);
             li{
               @include flex();
-              // height: 1rem;
               padding: 0.11rem 0 0.066rem 0;
               a{
-                // margin-top: 0.11rem;
                 text-align: center;
                 i{
                   width: 0.528rem;
@@ -257,7 +245,6 @@
   }
   .zhekou{
     width: 100%;
-    // overflow: hidden;
     .zhekou_biaoti{
       border-left: solid 0.035rem #ED5564;
       height: 0.18rem;
@@ -269,7 +256,6 @@
     .zhekou_list{
       width: 100%;
       position: relative;
-      // overflow: hidden;
       @include flexbox();
       @include justify-content(space-around);
       overflow: hidden;
@@ -277,7 +263,6 @@
         @include flexbox();
         margin-top: 0.11rem;
         position: relative;
-        // @include flex(1);
         width: 47%;
         overflow: hidden;
         background-color: #fff;
@@ -292,7 +277,6 @@
           color: #fff;
           top:-0.1rem;
           right: -0.4rem;
-          // z-index: 3;
           text-align: center;
           line-height: 0.62rem;
           overflow: hidden;
@@ -323,8 +307,6 @@
               border-top: solid 0.01rem #eee;
               color: #777;
               text-decoration: line-through;
-              // font-size: 0.1rem;
-              // margin-bottom
             }
           }
         }
@@ -348,7 +330,6 @@
         li{
           @include flexbox();
           background-color: #fff;
-          // display: block;
           border-bottom: solid 0.01rem #eee;
           span{
             width: 1.5rem;
