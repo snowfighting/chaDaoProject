@@ -124,18 +124,30 @@
 	append: function ($el, str) {
 	    $el.append(str);
 	},
-
 	switchPage: function (index) {
 	    $('#footer').on('tap', 'li', function () {
 	      location.href = $(this).attr('data-url');
 	    })
 	//<<<<<<< HEAD
 	//=======
+	//<<<<<<< HEAD
 	},
 	setHeader:function($el,str){
 		$el.html(str);
 	//>>>>>>> fengyuchao
+	//<<<<<<< HEAD
+	//}
+	//=======
+	},
+	  setHeader:function($el,str){
+	  	$el.html(str);
+	//>>>>>>> fengyuchao
+	//}
+	//>>>>>>> master
+	//=======
 	}
+
+	//>>>>>>> songxuejiao
 	};
 	//
 	module.exports = common;

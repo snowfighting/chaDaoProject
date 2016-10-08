@@ -46,6 +46,16 @@
 /***/ function(module, exports, __webpack_require__) {
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+	module.exports = __webpack_require__(9);
+
+
+/***/ },
+
+/***/ 9:
+=======
+>>>>>>> master
 	module.exports = __webpack_require__(14);
 
 
@@ -56,6 +66,7 @@
 /* 4 */,
 /* 5 */,
 /* 6 */
+<<<<<<< HEAD
 =======
 	module.exports = __webpack_require__(7);
 
@@ -63,6 +74,9 @@
 /***/ },
 
 /***/ 7:
+>>>>>>> master
+=======
+>>>>>>> fengyuchao
 >>>>>>> master
 /***/ function(module, exports) {
 

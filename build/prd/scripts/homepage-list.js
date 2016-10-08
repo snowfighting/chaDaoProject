@@ -44,7 +44,7 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(23);
+	module.exports = __webpack_require__(17);
 
 
 /***/ },
@@ -98,7 +98,13 @@
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /***/ 23:
+=======
+
+/***/ },
+/* 3 */
+>>>>>>> master
 =======
 
 /***/ },
@@ -119,25 +125,37 @@
 	append: function ($el, str) {
 	    $el.append(str);
 	},
-
 	switchPage: function (index) {
 	    $('#footer').on('tap', 'li', function () {
 	      location.href = $(this).attr('data-url');
 	    })
 	//<<<<<<< HEAD
 	//=======
+	//<<<<<<< HEAD
 	},
 	setHeader:function($el,str){
 		$el.html(str);
 	//>>>>>>> fengyuchao
+	//<<<<<<< HEAD
+	//}
+	//=======
+	},
+	  setHeader:function($el,str){
+	  	$el.html(str);
+	//>>>>>>> fengyuchao
+	//}
+	//>>>>>>> master
+	//=======
 	}
+
+	//>>>>>>> songxuejiao
 	};
 	//
 	module.exports = common;
 	//console.log(2)
 =======
-	module.exports = __webpack_require__(15);
->>>>>>> master
+	module.exports = __webpack_require__(23);
+>>>>>>> fengyuchao
 
 
 /***/ },
@@ -150,8 +168,8 @@
 /***/ },
 /* 5 */
 =======
-/***/ 15:
->>>>>>> master
+/***/ 23:
+>>>>>>> fengyuchao
 /***/ function(module, exports) {
 
 	module.exports = "<footer id=\"footer\">	<ul>		<li data-url=\'/build/index.html\'>			<i class=\"iconfont\">&#xe60e;</i>			<b>首页</b>		</li>		<li data-url=\'/build/index-class.html\'>			<i class=\"iconfont\">&#xe647;</i>			<b>分类</b>		</li>		<li data-url=\'\'>			<i class=\"iconfont\">&#xe638;</i>			<b>消息</b>		</li>		<li data-url=\'/build/index-car.html\'>			<i class=\"iconfont\">&#xe764;</i>			<b>购物车</b>		</li>		<li data-url=\'/build/index-person.html\'>			<i class=\"iconfont\">&#xe655;</i>			<b>个人中心</b>		</li>	</ul></footer>"
@@ -165,7 +183,10 @@
 /* 11 */,
 /* 12 */,
 /* 13 */,
-/* 14 */
+/* 14 */,
+/* 15 */,
+/* 16 */,
+/* 17 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*** IMPORTS FROM imports-loader ***/

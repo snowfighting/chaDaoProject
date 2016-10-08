@@ -650,6 +650,13 @@ a {
   vertical-align: middle; }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+@font-face {
+  font-family: 'iconfont';
+  src: url("iconfont.woff") format("woff"), url("iconfont.ttf") format("truetype"); }
+=======
+>>>>>>> master
 [type=tpl] {
   display: none; }
 
@@ -680,10 +687,14 @@ a {
 @font-face {
   font-family: 'iconfont';
   src: url("/build/images/iconfont/iconfont_sxj.woff") format("woff"), url("/build/images/iconfont/iconfont_sxj.ttf") format("truetype"); }
+<<<<<<< HEAD
 =======
 @font-face {
   font-family: 'iconfont';
   src: url("iconfont.woff") format("woff"), url("iconfont.ttf") format("truetype"); }
+>>>>>>> master
+=======
+>>>>>>> fengyuchao
 >>>>>>> master
 
 .iconfont {

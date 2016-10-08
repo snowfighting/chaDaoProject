@@ -45,9 +45,16 @@
 /***/ function(module, exports, __webpack_require__) {
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	module.exports = __webpack_require__(17);
 =======
 	module.exports = __webpack_require__(8);
+>>>>>>> master
+=======
+	module.exports = __webpack_require__(10);
+=======
+	module.exports = __webpack_require__(17);
+>>>>>>> fengyuchao
 >>>>>>> master
 
 
@@ -55,7 +62,10 @@
 /* 1 */,
 /* 2 */,
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> master
 <<<<<<< HEAD
 /* 3 */
 /***/ function(module, exports) {
@@ -73,18 +83,30 @@
 	append: function ($el, str) {
 	    $el.append(str);
 	},
-
 	switchPage: function (index) {
 	    $('#footer').on('tap', 'li', function () {
 	      location.href = $(this).attr('data-url');
 	    })
 	//<<<<<<< HEAD
 	//=======
+	//<<<<<<< HEAD
 	},
 	setHeader:function($el,str){
 		$el.html(str);
 	//>>>>>>> fengyuchao
+	//<<<<<<< HEAD
+	//}
+	//=======
+	},
+	  setHeader:function($el,str){
+	  	$el.html(str);
+	//>>>>>>> fengyuchao
+	//}
+	//>>>>>>> master
+	//=======
 	}
+
+	//>>>>>>> songxuejiao
 	};
 	//
 	module.exports = common;
@@ -96,19 +118,24 @@
 /* 5 */,
 /* 6 */,
 /* 7 */,
-/* 8 */
+/* 8 */,
+/* 9 */,
+/* 10 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*** IMPORTS FROM imports-loader ***/
 	var define = false;
 
-	__webpack_require__(9);
+	__webpack_require__(11);
 
 
 
 /***/ },
-/* 9 */
+/* 11 */
 /***/ function(module, exports, __webpack_require__) {
+=======
+<<<<<<< HEAD
+>>>>>>> master
 =======
 >>>>>>> master
 /* 3 */,
@@ -116,41 +143,15 @@
 /* 5 */,
 /* 6 */
 /***/ function(module, exports) {
->>>>>>> master
+>>>>>>> fengyuchao
 
 	/*** IMPORTS FROM imports-loader ***/
 	var define = false;
 
-<<<<<<< HEAD
 	var common = __webpack_require__(3);
-=======
-	var common = {
-	  renderBody: function ($el, str) {
-	    $el.prepend(str);
-	  },
-	  inner: function ($el, str) {
-	    $el.html(str);
-	  },
-	  append: function ($el, str) {
-	    $el.append(str);
-	  },
 
-	  switchPage: function (index) {
-	    $('#footer').on('tap', 'li', function () {
-	      location.href = $(this).attr('data-url');
-	    })
-	//<<<<<<< HEAD
-	//=======
-	  },
-	  setHeader:function($el,str){
-	  	$el.html(str);
-	//>>>>>>> fengyuchao
-	  }
-	};
->>>>>>> master
-
-	var header=__webpack_require__(10);
-	var body=__webpack_require__(11);
+	var header=__webpack_require__(12);
+	var body=__webpack_require__(13);
 
 	common.renderBody($('body'),header);
 	common.append($('body'),body);
@@ -160,6 +161,7 @@
 
 
 /***/ },
+<<<<<<< HEAD
 <<<<<<< HEAD
 /* 7 */
 =======
@@ -198,6 +200,13 @@
 /***/ },
 >>>>>>> master
 /* 10 */
+>>>>>>> master
+=======
+<<<<<<< HEAD
+/* 12 */
+=======
+/* 7 */
+>>>>>>> fengyuchao
 >>>>>>> master
 /***/ function(module, exports) {
 
@@ -328,9 +337,16 @@
 
 /***/ },
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* 19 */
 =======
 /* 11 */
+>>>>>>> master
+=======
+/* 13 */
+=======
+/* 19 */
+>>>>>>> fengyuchao
 >>>>>>> master
 /***/ function(module, exports) {
 
