@@ -1,8 +1,46 @@
-@font-face {font-family: 'iconfont';
-    src:url('iconfont.woff') format('woff'), /* chrome、firefox */
-    url('iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+//<<<<<<< HEAD
+[type = tpl]{
+    display: none;
 }
 
+$baseColor:#0dc441;
+
+@font-face {font-family: 'iconfont';
+    src: 
+    url('/build/images/iconfont/iconfont_fyc.woff') format('woff'), /* chrome、firefox */
+    url('/build/images/iconfont/iconfont_fyc.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+}
+@font-face {font-family: 'iconfont';
+    src: 
+    url('/build/images/iconfont/iconfont_fyc2.woff') format('woff'), /* chrome、firefox */
+    url('/build/images/iconfont/iconfont_fyc2.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  }
+@font-face {font-family: 'iconfont';
+    src: 
+    url('/build/images/iconfont/iconfont_fyc3.woff') format('woff'), /* chrome、firefox */
+    url('/build/images/iconfont/iconfont_fyc3.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  }
+ @font-face {font-family: 'iconfont';
+    src: 
+    url('/build/images/iconfont/iconfont_fyc4.woff') format('woff'), /* chrome、firefox */
+    url('/build/images/iconfont/iconfont_fyc4.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  }
+  @font-face {font-family: 'iconfont';
+    src: 
+    url('/build/images/iconfont/iconfont_fyc5.woff') format('woff'), /* chrome、firefox */
+    url('/build/images/iconfont/iconfont_fyc5.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  }
+   @font-face {font-family: 'iconfont';
+    src: 
+    url('/build/images/iconfont/iconfont_fyc6.woff') format('woff'), /* chrome、firefox */
+    url('/build/images/iconfont/iconfont_fyc6.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  }
+//=======
+@font-face {font-family: 'iconfont';
+    src:url('/build/images/iconfont/iconfont_sxj.woff') format('woff'), /* chrome、firefox */
+    url('/build/images/iconfont/iconfont_sxj.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+//>>>>>>> master
+}
 .iconfont{
     font-family: iconfont;
 }
@@ -37,6 +75,7 @@ footer {
         }
       }
     }
+<<<<<<< HEAD
 //<<<<<<< HEAD
   
 }
@@ -48,6 +87,9 @@ footer {
 //}
 //}
 //>>>>>>> master
+=======
+}
+>>>>>>> fengyuchao
 
 %header{
     #header{
@@ -57,6 +99,7 @@ footer {
             @include flexbox();
             text-align: center;
             line-height: 0.44rem;  
+            border-bottom: 0.5px solid #f4f4f4;
         #header-left{
             width: 0.44rem;
             font-size: 0.16rem;

@@ -1,0 +1,246 @@
+.container{
+    width: 100%;
+    height: 100%;
+    @extend %header;
+    @include flexbox();
+    @include flex-direction(column);
+    section{
+       @include flexbox();
+        @include flex(1);
+        @include flex-direction(column);
+        width: 100%;
+        height: 100%;
+        .searchbox{
+            height: .44rem;
+            background: #FAFAFA;
+            @include flexbox();
+            align-items: center;
+            border-bottom: 0.5px solid #f3f3f3;
+            #text{
+                @include flex(10);
+                height: 0.38rem;
+                margin-left: 0.05rem;
+                border: 0;
+                border-radius: 0.05rem;
+                background: #EEE;
+                padding-left: 0.05rem;
+            }
+            #btn{
+                @include flex(2);
+                height: .38rem;
+                margin-right: 0.05rem;
+                border: 0;
+                background:#FAFAFA;
+                font-size: 0.2rem;
+            }
+        }
+        nav{
+            width: 100%;
+            height: 0.42rem;
+            background: #fff;
+            line-height: 0.42rem;
+           
+            ul{
+                width: 100%;
+                height: 100%;
+                @include flexbox();
+                li{
+                    @include flex(1);
+                    text-align: center;
+                    span{
+                        display: inline-block;
+                         color: #333;
+                         font-size: 0.14rem;
+                         height: 0.42rem;
+                         
+                    }
+                    .active{
+                        border-bottom: 1px solid #ED5564;
+                        color: #ED5564;
+                    }
+                }
+            }
+        }
+        .content{
+            @include flexbox();
+            @include flex(1);
+            width: 100%;
+          
+            .swiper-container{
+                width: 100%;
+                height: 100%;
+                .swiper-slide{
+                    width: 100%;
+                    overflow-y: scroll;
+                    @include flexbox();
+                    justify-content: center;
+                    align-items: center;
+                    .emptyinfo{
+                        width: 2.2rem;
+                        height: 2rem;
+                        justify-content: center;
+                        align-items: center;
+                        i{  
+                            width: .7rem;
+                            height: .7rem;
+                            border-radius: 50%;
+                            font-size: 0.48rem;
+                            background: #DDD;
+                            color: #fff;
+                            text-align: center;
+                            line-height: 0.7rem;
+                        }          
+                        span{
+                            font-size: 0.16rem;
+                            margin-top: .06rem;
+                        }
+                        b{
+                            font-size: 0.14rem;
+                            font-weight: normal;
+                            color: #999;
+                            margin-top: .06rem;
+                        }
+                        a{
+                            display: block;
+                            width: 0.68rem;
+                            height: 0.26rem;
+                            background: #fff;
+                            border-bottom: 1px solid #CCC;
+                            text-align: center;
+                            line-height: 0.26rem;
+                            color: #555;
+                            margin-top: .1rem;
+                        }
+                    }
+                    
+                    .head {
+                        text-align: center;
+                        height: 35px;
+                        line-height: 35px;
+                    }
+                    .head img {
+                        margin-bottom: 0px;
+                        display: inline-block;
+                        transform: rotate(180deg);
+                        -webkit-transform: rotate(180deg);
+                        transition: transform 150ms;
+                        -webkit-transition: transform 150ms;
+                    }
+                    .up {
+                        transform: rotate(360deg) !important;
+                        -webkit-transform: rotate(360deg) !important;
+                    }
+                    .foot {
+                        text-align: center;
+                        height: 35px;
+                        line-height: 35px;
+                    }
+                    .foot img {
+                        margin-bottom: 0px;
+                        display: inline-block;
+                        /*transform: rotate(0deg);*/
+                        /*-webkit-transform: rotate(0deg);*/
+                        transition: transform 150ms;
+                        -webkit-transition: transform 150ms;
+                    }
+                    .down {
+                        transform: rotate(180deg) !important;
+                        -webkit-transform: rotate(180deg) !important;
+                    }
+                    .item{
+                        #order-title{
+                            @include flexbox();
+                            height: .42rem;
+                            width: 100%;
+                            line-height: .42rem;
+                            background: #fff;
+                            border-bottom: 1px solid #F0F0F0;
+                            border-top: 1px solid #F0F0F0;
+                            i{
+                                margin: 0 .1rem 0 .1rem;
+                            }
+                            .title{
+                                @include flex(1);
+                            }
+                            #status{
+                                align-self: flex-end;
+                                margin: 0 .1rem 0 .1rem;
+                            }
+                        }
+                        .order-com{
+                            height: .78rem;
+                            background: #fff;
+                            @include flexbox();
+                            padding-top: .1rem;
+                            img{
+                                width: .6rem;
+                                height: .6rem;
+                                margin: 0 .1rem 0 .1rem;
+                            }
+                            p{
+                                color: #333;
+                            }
+                            .priceandnum{
+                                text-align: right;
+                                margin-right: .1rem;
+                            }
+                        }
+                        .total{
+                            height: .42rem;
+                            background: #fff;
+                            border: 1px solid #F0F0F0;
+                            line-height: .42rem;
+                            text-align: right;
+                            p{
+                                padding-right: .1rem;
+                                .total_num{
+                                    font-weight: bold;
+                                }
+                                .total_price{
+                                    font-weight: 600;
+                                    color: #ED5564;
+                                    font-size: .18rem;
+                                }
+                            }
+                        }
+                        .cancel{
+                            height: .42rem;
+                            background: #fff;
+                            border-bottom: 1px solid #F0F0F0;
+                            text-align: right;
+                            line-height: .42rem;
+                            a{
+                                display: inline-block;
+                                width: .68rem;
+                                height: .26rem;
+                                border: 1px solid #CCC;
+                                border-radius: .03rem;
+                                font-size: .14rem;
+                                color: #555;
+                                vertical-align: middle;
+                                line-height: .26rem;
+                                margin-right: .1rem;
+                                text-align: center;
+                            }
+                        }
+                        button{
+                            width: 90%;
+                            margin: .05rem 5% .05rem 5%;
+                            height: .39rem;
+                            background: #ED5564;
+                            border-radius: .05rem;
+                            border: 0;
+                            color: #fff;
+                            font-size: .16rem;
+                            font-weight: bold;
+                        }
+                    }
+                    
+                }
+               
+            }
+        }
+        
+    }
+    @extend %footer;
+}
