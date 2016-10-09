@@ -45,7 +45,7 @@
 /***/ 0:
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(20);
+	module.exports = __webpack_require__(21);
 
 
 /***/ },
@@ -90,22 +90,10 @@
 
 /***/ },
 
-/***/ 11:
+/***/ 12:
 /***/ function(module, exports) {
 
 	module.exports = "<header id=\"header\">	<div id=\"header-wrap\">		<span class=\"iconfont\" id=\"header-left\">左边</span>		<div id=\"header-title\">标题</div>		<span class=\"iconfont\" id=\"header-right\">右边</span>	</div></header>"
-
-/***/ },
-
-/***/ 20:
-/***/ function(module, exports, __webpack_require__) {
-
-	/*** IMPORTS FROM imports-loader ***/
-	var define = false;
-
-	__webpack_require__(21);
-
-
 
 /***/ },
 
@@ -115,10 +103,22 @@
 	/*** IMPORTS FROM imports-loader ***/
 	var define = false;
 
+	__webpack_require__(22);
+
+
+
+/***/ },
+
+/***/ 22:
+/***/ function(module, exports, __webpack_require__) {
+
+	/*** IMPORTS FROM imports-loader ***/
+	var define = false;
+
 	var common = __webpack_require__(3);
 
-	var header=__webpack_require__(11);
-	var body=__webpack_require__(22);
+	var header=__webpack_require__(12);
+	var body=__webpack_require__(23);
 
 	common.renderBody($('body'),header);
 	common.append($('body'),body);
@@ -213,7 +213,7 @@
 
 /***/ },
 
-/***/ 22:
+/***/ 23:
 /***/ function(module, exports) {
 
 	module.exports = "<div id=\"container\">	<ul>		<li>			<span>手机号</span>			<div class=\"inputbox\">				<input type=\"text\" placeholder=\"请输入手机号码\" id=\"phonenumber\"/>				<span id=\"phoneInfo\" class=\"iconfont\">&#xe6a0;</span>			</div>					</li>		<li>			<span>动态码</span>			<div class=\"inputbox\">				<input type=\"text\" placeholder=\"请输入验证码\" id=\"code\"/>				<a href=\"#\">短信获取</a>				<span id=\"codeInfo\" class=\"iconfont\">&#xe6a0;</span>			</div>			</li>		<li>			<span>密码</span>			<div class=\"inputbox\">				<input type=\"password\" placeholder=\"请输入密码\" id=\"password\"/>				<span id=\"passInfo\" class=\"iconfont\">&#xe6a0;</span>			</div>					</li>		<input type=\"checkbox\" name=\"\" id=\"showBtn\" value=\"\" />显示密码		<input type=\"button\" value=\"注册\"  id=\"regBtn\"/>	</ul></div>"

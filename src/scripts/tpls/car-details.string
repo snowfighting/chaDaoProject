@@ -322,13 +322,13 @@
 			<a href="../../../index-car.html" class="cart">
 				<i class="iconfont">&#xe764;</i>
 				<p>购物车</p>
-				<span id="cart_count">1</span>
+				<span id="cart_counts"></span>
 			</a>
 		</div>
 		<div class="buy-handle">
 			<a href="javascript:void:(0);">立即购买</a>
 		</div>
-		<div class="car-handle" id="car-handle">
+		<div class="car-handle" id="car-handles">
 			<a href="javascript:void(0);">加入购物车</a>
 		</div>
 	</footer>
@@ -343,14 +343,14 @@
 		</div>
 		<div class="mask-block-top">
 			<dl class="goods-pic">
-				<dt><img src="../../../build/images/sai1.jpg" /></dt>
+				<dt><img id="gimg" src="../../../build/images/sai1.jpg" /></dt>
 				<dd>
-					<span class="goods-name">八马茶业 安溪铁观音 赛珍珠1000 250克</span>
+					<span class="goods-name" id="gname">八马茶业 安溪铁观音 赛珍珠1000 250克</span>
 					<div>
 						<p class="goods-price">
-							<span class="pricenow">￥<i>420.00</i></span><span class="priceago">￥600.00</span>
+							<span class="pricenow">￥<i id="sprice">420.00</i></span><span class="priceago">￥<i id="mprice">600.00</i></span>
 						</p>
-						<span class="goods-num">库存：1356件</span>
+						<span class="goods-num">库存：<i id="snum">1356</i>件</span>
 					</div>
 				</dd>
 			</dl>
@@ -376,7 +376,7 @@
 				<a href="../../../index-car.html" class="cart">
 					<i class="iconfont">&#xe764;</i>
 					<p>购物车</p>
-					<span id="cart_count">1</span>
+					<span id="cart_count"></span>
 				</a>
 			</div>
 			<div class="buy-handle">

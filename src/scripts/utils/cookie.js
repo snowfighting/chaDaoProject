@@ -32,4 +32,6 @@ var cookieObj = {
 	removeCookie(name){
 		setCookie(name,'',-1);
 	}
-}
+};
+
+module.exports = cookieObj;
