@@ -117,7 +117,7 @@ function UrlSearch(id){
 var id = UrlSearch('id');
 $.ajax({
 	type:"get",
-	url:"/mock/list.json",
+	url:"/build/mock/list.json",
 	data:{
 		"goods_id":id
 	},

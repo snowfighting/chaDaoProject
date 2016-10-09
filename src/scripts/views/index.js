@@ -5,7 +5,7 @@ common.renderBody($('body'),str);
 common.append($('.container'),footer);
 common.switchPage(0);
 $.ajax({
-  url: '/mock/list.json',
+  url: '/build/mock/list.json',
   success: function (res) {
   	
     var html = template('list', res.data);

@@ -3,7 +3,7 @@
         "list": [{
         	"title":"八马茶叶",
         	"status": "待付款",
-            "img": "/images/com_fyc_more.jpg",
+            "img": "/build/images/com_fyc_more.jpg",
             "content": "八马茶业 安溪铁观音 赛珍珠1000  250克",
             "perprice":"420.0",
             "num":1,
@@ -12,7 +12,7 @@
         },{
         	"title":"八马茶叶2",
         	"status": "待付款",
-            "img": "/images/com_fyc_more.jpg",
+            "img": "/build/images/com_fyc_more.jpg",
             "content": "八马茶业 安溪铁观音 赛珍珠1000  250克",
             "perprice":"420.0",
             "num":1,
@@ -21,7 +21,7 @@
         },{
         	"title":"八马茶叶3",
         	"status": "待付款",
-            "img": "/images/com_fyc_more.jpg",
+            "img": "/build/images/com_fyc_more.jpg",
             "content": "八马茶业 安溪铁观音 赛珍珠1000  250克",
             "perprice":"420.0",
             "num":1,
@@ -30,7 +30,7 @@
         },{
         	"title":"八马茶叶4",
         	"status": "待付款",
-            "img": "/images/com_fyc_more.jpg",
+            "img": "/build/images/com_fyc_more.jpg",
             "content": "八马茶业 安溪铁观音 赛珍珠1000  250克",
             "perprice":"420.0",
             "num":1,

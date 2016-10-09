@@ -6,7 +6,7 @@ var body=require('../tpls/orders.string');
 var comlist=require('../tpls/comlist.string');
 
 $.ajax({
-  url: '/mock/comlist.json',
+  url: '/build/mock/comlist.json',
   success: function (res) {
   	var strScrollTop='<div><div class="head">\
                 <img src="/build/images/arrow.png" width="18" height="18"/>\
@@ -79,7 +79,7 @@ window.onload=function(){
 	          head.attr('src', '/build/images/ajax-loader.gif');
 	          //TODO ajax下拉刷新数据
 				$.ajax({
-					  url: '/mock/comlist_more.json',
+					  url: '/build/mock/comlist_more.json',
 					  success: function (res) {
 					    var html = template('list', res.data);
 					    $("#index-scroll ul").prepend($(html).unwrap().html());
@@ -104,7 +104,7 @@ window.onload=function(){
 	          //TODO ajax上拉加载数据
 	          var self = this;
 	          $.ajax({
-					  url: '/mock/comlist_refresh.json',
+					  url: '/build/mock/comlist_refresh.json',
 					  success: function (res) {
 					    var html = template('list', res.data);
 					    $("#index-scroll ul").append($(html).unwrap().html());
