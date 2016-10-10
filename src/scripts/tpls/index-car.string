@@ -49,7 +49,7 @@
 	</section>
 	<footer>
 		<div class="all-check">
-			<input type="checkbox" id="all_checkbox" class="all_checkbox" value="" />
+			<input type="checkbox" checked id="all_checkbox" class="all_checkbox" value="" />
 		</div>
 		<div class="total">
 			<dl>

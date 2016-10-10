@@ -120,93 +120,96 @@
                 width: 100%;
                 border-bottom: solid 1px #eee;
                 border-bottom: solid 1px #eee;
-                .goods-check{
-                    float: left;
-                    width: 0.27rem;
-                    height: 0.165rem;
-                    margin-top: 0.32rem;
-                }
-                .goods-pic{
-                    float: left;
-                    width: 0.7rem;
-                    height: 0.7rem;
-                    padding: 0.055rem;
-                    border: solid 1px #EEEEEE;
-                    border-radius: 0.044rem;
-                    a{
-                        width: 100%;
-                        height: 100%;
-                        img{
+                .cart-item-cnt{
+                    height: 0.9338rem;
+                    .goods-check{
+                        float: left;
+                        width: 0.27rem;
+                        height: 0.165rem;
+                        margin-top: 0.32rem;
+                    }
+                    .goods-pic{
+                        float: left;
+                        width: 0.7rem;
+                        height: 0.7rem;
+                        padding: 0.055rem;
+                        border: solid 1px #EEEEEE;
+                        border-radius: 0.044rem;
+                        a{
                             width: 100%;
                             height: 100%;
-                        }
-                    }
-                }
-                .goods-info{
-                    float: right;
-                    width: 2.52rem;
-                    height: 100%;
-                    .goods-name{
-                        width: 100%;
-                        height: 0.42rem;
-                        a{
-                            float: left;
-                            width: 2.19rem;
-                            height: 0.31rem;
-                            font-size: 0.132rem;
-                            color: #111;
-                            line-height: 0.154rem;
-                            overflow: hidden;
-                        }
-                        .del-goods{
-                            float: right;
-                            width: 0.22rem;
-                            height: 0.22rem;
-                            background: url(../../../../images/del_b.png)no-repeat center;
-                            background-size:60% ;
-                            opacity: 0.4;
-                        }
-                    }
-                    .goods-subtotal{
-                        width: 100%;
-                        height: 0.28rem;
-                        .goods-price{
-                            float: left;
-                            width: 0.6rem;
-                            height: 0.22rem;
-                            margin-top: 0.06rem;
-                            font-size: 0.12rem;
-                            color: #ED5564;
-                            font-weight: bold;
-                            b{
-                                font-size: 0.132rem;
-                            }
-                        }
-                        .value-box{
-                            float: right;
-                            width: 0.84rem;
-                            height: 100%;
-                            border: solid 1px #CCCCCC;
-                            -webkit-border-radius: 0.044rem;
-                            -moz-border-radius: 0.044rem;
-                            border-radius: 0.044rem;
-                            span,input{
-                                float: left;
-                                width: 0.26rem;
+                            img{
+                                width: 100%;
                                 height: 100%;
-                                line-height: 0.28rem;
-                                text-align: center;
-                                color: #999;
-                                background: #FAFAFA;
-                                font-size: 0.18rem;
                             }
-                            input{
-                                border: 0;
-                                color: #333;
+                        }
+                    }
+                    .goods-info{
+                        float: right;
+                        width: 2.52rem;
+                        height: 100%;
+                        .goods-name{
+                            width: 100%;
+                            height: 0.42rem;
+                            a{
+                                float: left;
+                                width: 2.19rem;
+                                height: 0.31rem;
                                 font-size: 0.132rem;
-                                background: #fff;
-                                border-left: solid 1px #ccc;
-                                border-right: solid 1px #ccc;
+                                color: #111;
+                                line-height: 0.154rem;
+                                overflow: hidden;
+                            }
+                            .del-goods{
+                                float: right;
+                                width: 0.22rem;
+                                height: 0.22rem;
+                                background: url(../../../../images/del_b.png)no-repeat center;
+                                background-size:60% ;
+                                opacity: 0.4;
+                            }
+                        }
+                        .goods-subtotal{
+                            width: 100%;
+                            height: 0.28rem;
+                            .goods-price{
+                                float: left;
+                                width: 0.6rem;
+                                height: 0.22rem;
+                                margin-top: 0.06rem;
+                                font-size: 0.12rem;
+                                color: #ED5564;
+                                font-weight: bold;
+                                b{
+                                    font-size: 0.132rem;
+                                }
+                            }
+                            .value-box{
+                                float: right;
+                                width: 0.84rem;
+                                height: 100%;
+                                border: solid 1px #CCCCCC;
+                                -webkit-border-radius: 0.044rem;
+                                -moz-border-radius: 0.044rem;
+                                border-radius: 0.044rem;
+                                span,input{
+                                    float: left;
+                                    width: 0.26rem;
+                                    height: 100%;
+                                    line-height: 0.28rem;
+                                    text-align: center;
+                                    color: #999;
+                                    background: #FAFAFA;
+                                    font-size: 0.18rem;
+                                }
+                                input{
+                                    border: 0;
+                                    color: #333;
+                                    font-size: 0.132rem;
+                                    background: #fff;
+                                    border-left: solid 1px #ccc;
+                                    border-right: solid 1px #ccc;
+                                }
                             }
                         }
                     }

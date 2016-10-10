@@ -160,7 +160,44 @@
 			$(this).children().eq(2).children().eq(1).children().eq(1).children().eq(1).val(++n);
 			setTotal(mon);
 		}
-	})
+	});
+
+	/**
+	 * 删除商品
+	 */
+	$('#cart-item').on('click','li',function(){
+		var event = event || window.event;
+		var target = event.target || event.srcElement;
+		var n = parseInt($(this).children().eq(2).children().eq(1).children().eq(1).children().eq(1).val());
+		var p = parseFloat($(this).children().eq(2).children().eq(1).children().eq(0).children().eq(0).html());
+		var mon = (p*n).toFixed(2);
+		console.log(mon);
+		if(target.className == 'del-goods'){
+	//		删除页面中对应商品
+			var productName = $(this).children().eq(2).children().eq(0).children().eq(0).html();
+			$(this).remove();
+			
+	//		删除cookie
+			var strCookie = cookieObj.getCookie('cartcookie');
+			if(strCookie.length>0){
+				var arrCookie = JSON.parse(strCookie);
+				for(var i = 0;i < arrCookie.length;i++){
+	//				找到cookie中对应商品
+					if(arrCookie[i].name == productName){
+						arrCookie.splice(i,1);
+						break;
+					}
+				}
+			}
+	//		更新cookie
+			var strCookieNew = JSON.stringify(arrCookie);
+			cookieObj.setCookie('cartcookie',strCookieNew,30);
+			
+			setTotal(-mon);
+		}
+	});
+
+
 
 	/**
 	   * 全选
@@ -185,7 +222,7 @@
 		for(var i = 0;i < arrProducts.length;i++){
 			html+= '<li class="cart-item-cnt">';
 			html+= '<span class="goods-check">';
-			html+= '<input type="checkbox" name="goods" value="" /></span>';
+			html+= '<input type="checkbox" checked name="goods" value="" /></span>';
 			html+= '<div class="goods-pic">';
 			html+= '<a href="../../../car-details.html">';
 			html+= '<img src="'+arrProducts[i].img+'"/></a></div>';
@@ -214,7 +251,7 @@
 /* 8 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"car-container\">	<header>		<div class=\"header-l\">			<a href=\"javascript:history.go(-1)\"></a>		</div>		<div class=\"header-title\">			<h1>购物车</h1>		</div>		<div class=\"header-r\">			<a href=\"javascript:void(0);\"></a>			<!--<div class=\"head-nav-menu\" id=\"head-nav-menu\">				<span class=\"arrow\"></span>					<ul>						<li>							<a href=\"../../../index.html\"><i class=\"iconfont\">&#xe60e;</i>首页</a>						</li>						<li>							<a href=\"../../../#\"><i class=\"iconfont\">&#xe6b5;</i>搜索</a>						</li>						<li>							<a href=\"../../../index-class.html\"><i class=\"iconfont\">&#xe647;</i>分类</a>						</li>						<li>							<a href=\"../../../#\"><i class=\"iconfont\">&#xe638;</i>消息</a>						</li>						<li>							<a href=\"../../../index-car.html\"><i class=\"iconfont\">&#xe764;</i>购物车</a>						</li>						<li>							<a href=\"../../../index-person.html\"><i class=\"iconfont\">&#xe655;</i>我的商城</a>						</li>					</ul>			</div>-->		</div>	</header>	<section>		<div class=\"cart-container\">			<div class=\"cart-store\">				<span class=\"store-check\">					<input type=\"checkbox\" checked value=\"\" />				</span>				<dl>					<dt></dt>					<dd>八马茶业</dd>				</dl>			</div>			<ul class=\"cart-item\" id=\"cart-item\"></ul>		</div>	</section>	<footer>		<div class=\"all-check\">			<input type=\"checkbox\" id=\"all_checkbox\" class=\"all_checkbox\" value=\"\" />		</div>		<div class=\"total\">			<dl>				<dt>合计总金额：</dt>				<dd>￥<b id=\"totalM\">525.00</b></dd>			</dl>		</div>		<div class=\"check-out\">			<a href=\"javascript:void(0);\">确认信息</a>		</div>	</footer></div>"
+	module.exports = "<div class=\"car-container\">	<header>		<div class=\"header-l\">			<a href=\"javascript:history.go(-1)\"></a>		</div>		<div class=\"header-title\">			<h1>购物车</h1>		</div>		<div class=\"header-r\">			<a href=\"javascript:void(0);\"></a>			<!--<div class=\"head-nav-menu\" id=\"head-nav-menu\">				<span class=\"arrow\"></span>					<ul>						<li>							<a href=\"../../../index.html\"><i class=\"iconfont\">&#xe60e;</i>首页</a>						</li>						<li>							<a href=\"../../../#\"><i class=\"iconfont\">&#xe6b5;</i>搜索</a>						</li>						<li>							<a href=\"../../../index-class.html\"><i class=\"iconfont\">&#xe647;</i>分类</a>						</li>						<li>							<a href=\"../../../#\"><i class=\"iconfont\">&#xe638;</i>消息</a>						</li>						<li>							<a href=\"../../../index-car.html\"><i class=\"iconfont\">&#xe764;</i>购物车</a>						</li>						<li>							<a href=\"../../../index-person.html\"><i class=\"iconfont\">&#xe655;</i>我的商城</a>						</li>					</ul>			</div>-->		</div>	</header>	<section>		<div class=\"cart-container\">			<div class=\"cart-store\">				<span class=\"store-check\">					<input type=\"checkbox\" checked value=\"\" />				</span>				<dl>					<dt></dt>					<dd>八马茶业</dd>				</dl>			</div>			<ul class=\"cart-item\" id=\"cart-item\"></ul>		</div>	</section>	<footer>		<div class=\"all-check\">			<input type=\"checkbox\" checked id=\"all_checkbox\" class=\"all_checkbox\" value=\"\" />		</div>		<div class=\"total\">			<dl>				<dt>合计总金额：</dt>				<dd>￥<b id=\"totalM\">525.00</b></dd>			</dl>		</div>		<div class=\"check-out\">			<a href=\"javascript:void(0);\">确认信息</a>		</div>	</footer></div>"
 
 /***/ },
 /* 9 */

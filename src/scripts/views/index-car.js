@@ -50,7 +50,44 @@ $('#cart-item').on('click','li',function(){
 		$(this).children().eq(2).children().eq(1).children().eq(1).children().eq(1).val(++n);
 		setTotal(mon);
 	}
-})
+});
+
+/**
+ * 删除商品
+ */
+$('#cart-item').on('click','li',function(){
+	var event = event || window.event;
+	var target = event.target || event.srcElement;
+	var n = parseInt($(this).children().eq(2).children().eq(1).children().eq(1).children().eq(1).val());
+	var p = parseFloat($(this).children().eq(2).children().eq(1).children().eq(0).children().eq(0).html());
+	var mon = (p*n).toFixed(2);
+	console.log(mon);
+	if(target.className == 'del-goods'){
+//		删除页面中对应商品
+		var productName = $(this).children().eq(2).children().eq(0).children().eq(0).html();
+		$(this).remove();
+		
+//		删除cookie
+		var strCookie = cookieObj.getCookie('cartcookie');
+		if(strCookie.length>0){
+			var arrCookie = JSON.parse(strCookie);
+			for(var i = 0;i < arrCookie.length;i++){
+//				找到cookie中对应商品
+				if(arrCookie[i].name == productName){
+					arrCookie.splice(i,1);
+					break;
+				}
+			}
+		}
+//		更新cookie
+		var strCookieNew = JSON.stringify(arrCookie);
+		cookieObj.setCookie('cartcookie',strCookieNew,30);
+		
+		setTotal(-mon);
+	}
+});
+
+
 
 /**
    * 全选
@@ -75,7 +112,7 @@ function showGoods(){
 	for(var i = 0;i < arrProducts.length;i++){
 		html+= '<li class="cart-item-cnt">';
 		html+= '<span class="goods-check">';
-		html+= '<input type="checkbox" name="goods" value="" /></span>';
+		html+= '<input type="checkbox" checked name="goods" value="" /></span>';
 		html+= '<div class="goods-pic">';
 		html+= '<a href="../../../car-details.html">';
 		html+= '<img src="'+arrProducts[i].img+'"/></a></div>';
